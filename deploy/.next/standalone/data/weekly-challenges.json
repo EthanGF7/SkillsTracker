@@ -1,0 +1,36 @@
+[
+  {
+    "id": "2b6d9b20-bea0-4c91-8fc7-ba47db0c63d3",
+    "title": "Semana de rutinas cambiantes",
+    "description": "Durante 7 días, cambia al menos 3 aspectos de tu rutina diaria (personal y profesional) y observa cómo te adaptas a los nuevos hábitos. Los cambios pueden incluir horarios, métodos de trabajo, rutas de transporte, formas de comunicación, etc. Lleva un diario para registrar tus experiencias y emociones.",
+    "rules": [
+      "Elige cambios significativos pero realizables",
+      "Mantén cada cambio durante al menos 2 días consecutivos",
+      "Reflexiona diariamente sobre cómo te adaptas a las nuevas situaciones",
+      "No vuelvas a tus rutinas anteriores durante la semana",
+      "Comparte tus experiencias con al menos una persona"
+    ],
+    "extraTip": "Para maximizar el aprendizaje, intenta identificar patrones en tu capacidad de adaptación. ¿Qué tipo de cambios te resultan más fáciles? ¿Cuáles requieren más esfuerzo? Usa estas observaciones para mejorar tu flexibilidad en el futuro.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-10T10:46:05.020Z"
+  },
+  {
+    "id": "d6682a43-bdba-4cdd-983c-fb26496af8e6",
+    "title": "Semana de rutinas cambiantes",
+    "description": "Durante 7 días, cambia una rutina establecida cada día. Elige áreas como tu camino al trabajo, tu horario de comidas, tu forma de organizar tareas o tu método de aprendizaje. Cada día debes implementar un cambio significativo y mantenerlo durante 24 horas.",
+    "rules": [
+      "Elige 7 rutinas diferentes para modificar (una por día)",
+      "El cambio debe ser significativo pero realizable",
+      "Reflexiona cada noche sobre cómo te adaptaste al cambio",
+      "No puedes repetir el mismo tipo de cambio dos días seguidos",
+      "Debes mantener cada cambio durante todo el día"
+    ],
+    "extraTip": "Lleva un diario donde anotes tus emociones, dificultades y aprendizajes de cada día. Esto te ayudará a identificar patrones en tu capacidad de adaptación.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-10T10:45:54.783Z"
+  }
+]

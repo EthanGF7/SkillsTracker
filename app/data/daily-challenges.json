@@ -1,0 +1,277 @@
+[
+  {
+    "id": "ff6d8d38-e919-4cfb-9a03-5fc9de19e59d",
+    "title": "Diario de Emociones Ajenas",
+    "description": "Hoy, dedica tiempo a observar y anotar las emociones que percibes en las personas con las que interactúas. Esto te ayudará a desarrollar tu capacidad para reconocer y entender los sentimientos de los demás.",
+    "rules": [
+      "Observa a al menos tres personas diferentes durante el día",
+      "Anota en un cuaderno o en tu teléfono las emociones que crees que están sintiendo",
+      "Reflexiona sobre cómo esas emociones podrían estar influyendo en su comportamiento"
+    ],
+    "extraTip": "Intenta no juzgar las emociones que observas, simplemente reconócelas y anótalas. Esto te ayudará a mantener una mente abierta y a practicar la empatía sin prejuicios.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-11T10:14:22.931Z"
+  },
+  {
+    "id": "6f042952-e98a-4853-ae24-2240d55500a2",
+    "title": "Escucha con los ojos",
+    "description": "Hoy, durante tus conversaciones, enfócate en observar el lenguaje no verbal de las personas (expresiones faciales, gestos, postura). Intenta identificar cómo se sienten más allá de sus palabras y responde de manera empática.",
+    "rules": [
+      "Elige al menos 3 interacciones para practicar",
+      "No interrumpas mientras observas",
+      "Responde validando las emociones que percibes"
+    ],
+    "extraTip": "Si no estás seguro de lo que observas, puedes hacer preguntas abiertas como 'Parece que esto te afecta, ¿quieres contarme más?'",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-11T10:14:18.744Z"
+  },
+  {
+    "id": "19b88973-7942-4e54-99b4-2fbc5203cf81",
+    "title": "Diario de emociones ajenas",
+    "description": "Hoy, dedica 5 minutos a observar a las personas que te rodean (en el trabajo, en la calle o en casa) y anota en un papel o en tu teléfono las emociones que crees que están sintiendo. Luego, reflexiona sobre cómo podrías apoyar o comprender mejor a esas personas si tuvieras la oportunidad de interactuar con ellas.",
+    "rules": [
+      "Observa a al menos 3 personas diferentes.",
+      "Anota la emoción que percibes y por qué crees que la sienten.",
+      "Reflexiona sobre cómo podrías actuar si tuvieras la oportunidad de interactuar con ellas."
+    ],
+    "extraTip": "Si te sientes cómodo, puedes preguntar a una de esas personas cómo se siente realmente para validar tu percepción y aprender de la experiencia.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-11T10:11:11.843Z"
+  },
+  {
+    "id": "51e4d977-6039-43e6-878e-29f472337e9b",
+    "title": "Reinterpretación de un clásico",
+    "description": "Elige una obra de arte, canción o libro clásico y reinterpreta su mensaje principal en un formato completamente diferente al original. Por ejemplo, si eliges una pintura, podrías convertirla en una canción o poema. Este ejercicio estimula la capacidad de ver conexiones inesperadas entre diferentes formas de expresión artística.",
+    "rules": [
+      "Selecciona una obra clásica que conozcas bien",
+      "Reinterpreta su esencia en un formato artístico diferente",
+      "No uses más de 2 horas para completar tu creación"
+    ],
+    "extraTip": "Intenta capturar no solo los elementos visuales o literales, sino también las emociones y conceptos subyacentes de la obra original.",
+    "skill": "Creatividad",
+    "level": "Maestro",
+    "type": "daily",
+    "createdAt": "2025-03-11T10:10:51.207Z"
+  },
+  {
+    "id": "b0389a78-6e13-460a-844b-d88db9e7d596",
+    "title": "Escucha con los ojos cerrados",
+    "description": "Hoy, durante al menos una conversación, cierra los ojos mientras escuchas a la otra persona. Esto te ayudará a concentrarte únicamente en sus palabras, tono de voz y emociones, desarrollando tu capacidad de empatía al eliminar las distracciones visuales.",
+    "rules": [
+      "Elige una conversación tranquila y segura para realizar este ejercicio",
+      "Cierra los ojos durante al menos 1 minuto mientras escuchas",
+      "Enfócate en captar las emociones detrás de las palabras"
+    ],
+    "extraTip": "Después de la conversación, reflexiona sobre cómo esta experiencia cambió tu percepción de la interacción y lo que aprendiste sobre la otra persona.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-11T09:03:38.930Z"
+  },
+  {
+    "id": "877b405a-f5b1-4d97-b4f2-d005b19242b8",
+    "title": "Escucha con los ojos",
+    "description": "Hoy, durante tus conversaciones, enfócate en observar el lenguaje no verbal de las personas (expresiones faciales, gestos, postura). Intenta identificar cómo se sienten más allá de lo que dicen con palabras.",
+    "rules": [
+      "Selecciona al menos 3 interacciones para practicar",
+      "No interrumpas ni juzgues - solo observa y escucha",
+      "Al final de cada conversación, reflexiona sobre lo que percibiste"
+    ],
+    "extraTip": "Si tienes confianza con la persona, puedes hacer preguntas abiertas como '¿Cómo te sientes realmente con esto?' para validar tus observaciones",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-11T09:03:28.021Z"
+  },
+  {
+    "id": "5835f93a-b9f8-40d6-a6d8-59ef4ff4fdc6",
+    "title": "Reinventa tu rutina matutina",
+    "description": "Transforma tu rutina matutina habitual en algo completamente nuevo y creativo. El objetivo es estimular tu pensamiento lateral al romper con patrones establecidos y descubrir nuevas formas de comenzar el día.",
+    "rules": [
+      "Cambia el orden de al menos 3 actividades que normalmente haces por la mañana",
+      "Incorpora una actividad nueva que nunca hayas hecho en tu rutina matutina",
+      "Usa al menos un objeto de manera no convencional durante tu rutina"
+    ],
+    "extraTip": "Lleva un diario rápido para anotar cómo te sientes con estos cambios y qué ideas nuevas surgen durante el día como resultado de esta rutina diferente.",
+    "skill": "Creatividad",
+    "level": "Aprendiz",
+    "type": "daily",
+    "createdAt": "2025-03-10T12:08:50.648Z"
+  },
+  {
+    "id": "1c227c7b-b328-4e64-80d1-52069df2de2f",
+    "title": "Cambia tu ruta habitual",
+    "description": "Hoy, elige una ruta diferente para ir al trabajo, escuela o cualquier lugar que visites regularmente. Este pequeño cambio te ayudará a salir de la rutina y a adaptarte a nuevas perspectivas y entornos.",
+    "rules": [
+      "Planifica una ruta alternativa con anticipación",
+      "No uses la ruta que normalmente tomas",
+      "Observa y anota al menos tres cosas nuevas que no habías notado antes"
+    ],
+    "extraTip": "Intenta usar un medio de transporte diferente si es posible, como caminar, andar en bicicleta o tomar un autobús en lugar de conducir.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-10T12:08:11.203Z"
+  },
+  {
+    "id": "c6fd99d8-86b1-4a8f-9978-1bd25b1cc3e2",
+    "title": "Cambia tu ruta habitual",
+    "description": "Hoy, elige una ruta diferente para ir al trabajo, escuela o cualquier lugar que visites regularmente. Este cambio te ayudará a desarrollar flexibilidad mental y a adaptarte a nuevas situaciones, incluso en algo tan cotidiano como tu camino diario.",
+    "rules": [
+      "Planifica una ruta alternativa con anticipación",
+      "No uses GPS a menos que sea absolutamente necesario",
+      "Observa y anota al menos tres cosas nuevas que no habías notado antes"
+    ],
+    "extraTip": "Intenta mantener una actitud abierta y curiosa durante el trayecto. Si te pierdes, considera que es parte de la experiencia y una oportunidad para aprender algo nuevo.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-10T12:08:10.652Z"
+  },
+  {
+    "id": "6eec7878-ca8a-4979-8380-9085dc0ae76e",
+    "title": "Planificación de bloques de tiempo",
+    "description": "Divide tu día en bloques de tiempo específicos para cada actividad, asignando horarios fijos para trabajo, descanso y tareas personales. Esto te ayudará a visualizar mejor tu día y mantener el enfoque en cada tarea.",
+    "rules": [
+      "Crea un horario con bloques de 1 hora para todo el día",
+      "Asigna una actividad específica a cada bloque",
+      "Sigue el horario al pie de la letra, sin saltarte bloques"
+    ],
+    "extraTip": "Usa colores diferentes para categorizar los bloques (trabajo, ocio, descanso) y revisa tu horario cada 2 horas para asegurarte de que estás en el camino correcto.",
+    "skill": "Organización",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-10T11:37:32.348Z"
+  },
+  {
+    "id": "c3c194d8-35ac-4dd7-be4a-f308e6f55c0b",
+    "title": "Planificación de bloques de tiempo",
+    "description": "Divide tu día en bloques de tiempo específicos para cada actividad, asignando periodos definidos para trabajo, descanso y tareas personales. Esto te ayudará a visualizar mejor tu día y mantener el enfoque en cada tarea.",
+    "rules": [
+      "Divide tu día en bloques de 1-2 horas",
+      "Asigna una tarea específica a cada bloque",
+      "No cambies de actividad hasta que termine el bloque"
+    ],
+    "extraTip": "Usa un temporizador para respetar los límites de tiempo y evitar distracciones.",
+    "skill": "Organización",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-10T11:37:21.366Z"
+  },
+  {
+    "id": "10749692-9d8a-498c-8882-19bd10a0b99a",
+    "title": "Planificación de tareas con el método 1-3-5",
+    "description": "Organiza tu día utilizando el método 1-3-5, que consiste en seleccionar 1 tarea importante, 3 tareas medianas y 5 tareas pequeñas para completar en el día. Este método te ayudará a priorizar y mantener el enfoque en lo esencial.",
+    "rules": [
+      "Escribe una lista de todas las tareas pendientes.",
+      "Selecciona 1 tarea importante que debes completar sí o sí.",
+      "Elige 3 tareas medianas que te gustaría terminar.",
+      "Agrega 5 tareas pequeñas o rápidas que puedas hacer entre las principales."
+    ],
+    "extraTip": "Usa un temporizador para cada tarea y revisa tu progreso al final del día. ¡Celebra tus logros!",
+    "skill": "Organización",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-10T11:33:58.105Z"
+  },
+  {
+    "id": "2be40086-be09-4bc2-8f95-60671f53c1eb",
+    "title": "Planificación de bloques de tiempo",
+    "description": "Divide tu día en bloques de tiempo específicos para cada actividad, asignando horarios fijos para trabajo, descanso y tareas personales. Esto te ayudará a visualizar mejor tu día y mantener el enfoque en cada tarea.",
+    "rules": [
+      "Divide tu día en bloques de 1 hora",
+      "Asigna una actividad específica a cada bloque",
+      "Sigue estrictamente los horarios asignados"
+    ],
+    "extraTip": "Usa un temporizador para respetar los límites de tiempo y evitar distracciones.",
+    "skill": "Organización",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-10T11:33:55.353Z"
+  },
+  {
+    "id": "dce16261-3397-475d-8c20-032506ee2764",
+    "title": "Planifica tu día ideal",
+    "description": "Crea un plan detallado para un día completo, desde que te levantas hasta que te acuestas. Incluye todas tus actividades personales y profesionales, asignando tiempos específicos a cada tarea. El objetivo es maximizar tu productividad y equilibrio personal.",
+    "rules": [
+      "Define claramente tus objetivos para el día",
+      "Asigna bloques de tiempo específicos para cada actividad",
+      "Incluye tiempo para descansos y actividades personales",
+      "Prioriza las tareas más importantes",
+      "Revisa y ajusta tu plan al final del día"
+    ],
+    "extraTip": "Usa colores o símbolos para diferenciar entre actividades personales y profesionales, esto te ayudará a visualizar mejor tu distribución del tiempo.",
+    "skill": "Organización",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-10T11:31:49.194Z"
+  },
+  {
+    "id": "e60aa672-4f4a-410f-9818-8077a79ade23",
+    "title": "Día de rutinas invertidas",
+    "description": "Durante un día completo, cambia por completo tu rutina habitual. Realiza tus actividades cotidianas y profesionales en un orden diferente, prueba nuevas formas de hacerlas y adapta tu horario de manera inusual.",
+    "rules": [
+      "No puedes seguir tu rutina habitual en el mismo orden",
+      "Debes incluir al menos 3 actividades que normalmente no haces en tu día",
+      "Mantén una actitud positiva ante los cambios y observa cómo te adaptas",
+      "Reflexiona al final del día sobre cómo te sentiste con los cambios"
+    ],
+    "extraTip": "Lleva un pequeño diario durante el día para anotar tus impresiones y emociones ante cada cambio. Esto te ayudará a ser más consciente de tu capacidad de adaptación.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-10T10:53:06.531Z"
+  },
+  {
+    "id": "e0f98ef7-9dda-4c86-95bc-e17165c1ae5b",
+    "title": "Cambia tu rutina diaria",
+    "description": "Durante un día completo, altera significativamente tu rutina habitual. Esto incluye cambiar el orden de tus actividades, probar nuevas formas de hacer las tareas cotidianas y experimentar con diferentes enfoques para resolver problemas. El objetivo es salir de tu zona de confort y adaptarte a nuevas formas de hacer las cosas.",
+    "rules": [
+      "No puedes seguir el mismo orden de actividades que haces normalmente",
+      "Debes incluir al menos tres actividades nuevas o diferentes a las habituales",
+      "Reflexiona al final del día sobre cómo te sentiste y qué aprendiste de la experiencia"
+    ],
+    "extraTip": "Mantén una actitud abierta y positiva ante los cambios, y trata de ver cada modificación como una oportunidad para aprender algo nuevo.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-10T10:53:02.518Z"
+  },
+  {
+    "id": "16b81f26-659f-46ad-ad5f-2fc0a6e6b758",
+    "title": "Día de rutinas alternativas",
+    "description": "Durante un día completo, cambia al menos 5 rutinas o hábitos establecidos en tu vida cotidiana y profesional. Por ejemplo: toma un camino diferente al trabajo, cambia tu horario de comidas, realiza tus tareas en un orden distinto al habitual, o prueba una nueva forma de organizar tu espacio de trabajo.",
+    "rules": [
+      "Debes realizar al menos 5 cambios significativos en tus rutinas",
+      "Los cambios deben afectar tanto tu vida personal como profesional",
+      "Mantén una actitud abierta y positiva ante cada cambio",
+      "Reflexiona al final del día sobre cómo te sentiste con cada modificación"
+    ],
+    "extraTip": "Lleva un pequeño diario durante el día para anotar tus impresiones y emociones con cada cambio. Esto te ayudará a ser más consciente de tu capacidad de adaptación.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-10T10:45:39.493Z"
+  },
+  {
+    "id": "b0f851f8-df43-4b28-9c78-98f997d0cc14",
+    "title": "Cambia tu rutina matutina",
+    "description": "Durante un día, modifica completamente tu rutina matutina habitual. Incluye cambios en el orden de tus actividades, el tiempo que dedicas a cada una, y prueba al menos dos nuevas acciones que no sueles hacer por las mañanas.",
+    "rules": [
+      "No puedes seguir tu rutina habitual en el mismo orden",
+      "Debes incluir al menos dos actividades nuevas que no sueles hacer por las mañanas",
+      "Reflexiona sobre cómo te sientes con los cambios al final del día"
+    ],
+    "extraTip": "Anota tus impresiones y emociones durante el día para identificar cómo te adaptas a los cambios y qué puedes aprender de esta experiencia.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-10T10:45:38.874Z"
+  }
+]

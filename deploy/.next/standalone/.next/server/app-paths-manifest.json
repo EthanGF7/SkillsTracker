@@ -1,0 +1,14 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/challenges/[type]/route": "app/api/challenges/[type]/route.js",
+  "/api/check-api-key/route": "app/api/check-api-key/route.js",
+  "/api/generate-challenge/route": "app/api/generate-challenge/route.js",
+  "/api/challenge-history/route": "app/api/challenge-history/route.js",
+  "/api/lti/auth/route": "app/api/lti/auth/route.js",
+  "/api/lti/config/route": "app/api/lti/config/route.js",
+  "/api/lti/launch/route": "app/api/lti/launch/route.js",
+  "/api/test-api-key/route": "app/api/test-api-key/route.js",
+  "/api/test-challenge/route": "app/api/test-challenge/route.js",
+  "/page": "app/page.js",
+  "/icon/route": "app/icon/route.js"
+}

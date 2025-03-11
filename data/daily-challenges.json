@@ -1,0 +1,33 @@
+[
+  {
+    "id": "16b81f26-659f-46ad-ad5f-2fc0a6e6b758",
+    "title": "Día de rutinas alternativas",
+    "description": "Durante un día completo, cambia al menos 5 rutinas o hábitos establecidos en tu vida cotidiana y profesional. Por ejemplo: toma un camino diferente al trabajo, cambia tu horario de comidas, realiza tus tareas en un orden distinto al habitual, o prueba una nueva forma de organizar tu espacio de trabajo.",
+    "rules": [
+      "Debes realizar al menos 5 cambios significativos en tus rutinas",
+      "Los cambios deben afectar tanto tu vida personal como profesional",
+      "Mantén una actitud abierta y positiva ante cada cambio",
+      "Reflexiona al final del día sobre cómo te sentiste con cada modificación"
+    ],
+    "extraTip": "Lleva un pequeño diario durante el día para anotar tus impresiones y emociones con cada cambio. Esto te ayudará a ser más consciente de tu capacidad de adaptación.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-10T10:45:39.493Z"
+  },
+  {
+    "id": "b0f851f8-df43-4b28-9c78-98f997d0cc14",
+    "title": "Cambia tu rutina matutina",
+    "description": "Durante un día, modifica completamente tu rutina matutina habitual. Incluye cambios en el orden de tus actividades, el tiempo que dedicas a cada una, y prueba al menos dos nuevas acciones que no sueles hacer por las mañanas.",
+    "rules": [
+      "No puedes seguir tu rutina habitual en el mismo orden",
+      "Debes incluir al menos dos actividades nuevas que no sueles hacer por las mañanas",
+      "Reflexiona sobre cómo te sientes con los cambios al final del día"
+    ],
+    "extraTip": "Anota tus impresiones y emociones durante el día para identificar cómo te adaptas a los cambios y qué puedes aprender de esta experiencia.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-10T10:45:38.874Z"
+  }
+]

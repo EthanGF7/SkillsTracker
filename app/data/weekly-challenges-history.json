@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ea24f886-8e76-4ff2-9fa2-f0f2202b9ec9",
+    "title": "Cambio de Perspectiva en 72 Horas",
+    "description": "Durante los próximos 3 días, tu objetivo es enfrentarte a situaciones cotidianas desde un ángulo completamente diferente al habitual. Por ejemplo, si siempre tomas el mismo camino al trabajo, elige una ruta alternativa. Si sueles hacer las tareas domésticas de una manera específica, intenta un método distinto. El reto consiste en identificar al menos tres situaciones diarias donde puedas aplicar un cambio de perspectiva y documentar cómo esta adaptación afectó tu día a día.",
+    "rules": [
+      "Identifica y cambia al menos tres rutinas o hábitos diarios.",
+      "Documenta tus experiencias y reflexiones cada día.",
+      "Al final del reto, elabora un breve informe sobre cómo estos cambios influyeron en tu adaptabilidad y perspectiva."
+    ],
+    "extraTip": "Mantén una mente abierta y curiosa. No te limites a cambios superficiales; busca profundizar en cómo diferentes enfoques pueden alterar tu percepción y respuesta a las situaciones.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-02-24T11:13:42.602Z"
+  },
+  {
+    "id": "3cd01074-b42b-4cf6-a351-82c7b8da89c3",
+    "title": "El Laberinto de las Decisiones",
+    "description": "Durante esta semana, te enfrentarás a un laberinto de decisiones complejas que simulan escenarios reales de alta presión. Cada día, recibirás un escenario diferente que requiere una solución innovadora y efectiva. Los escenarios incluyen desde crisis de comunicación en equipos multidisciplinarios hasta la optimización de recursos limitados en proyectos críticos. Tu objetivo es no solo resolver cada problema, sino también documentar tu proceso de pensamiento y las alternativas consideradas, evaluando el impacto potencial de cada decisión.",
+    "rules": [
+      "Cada día, dedica al menos 2 horas a resolver el escenario presentado.",
+      "Documenta tu proceso de pensamiento, incluyendo todas las alternativas consideradas y por qué descartaste o elegiste cada una.",
+      "Al final de la semana, presenta un informe que resuma tus soluciones, el impacto esperado de cada una y una reflexión sobre lo que aprendiste en el proceso."
+    ],
+    "extraTip": "Intenta aplicar el pensamiento lateral en cada escenario. A veces, la solución no está en el camino más obvio, sino en una perspectiva completamente diferente.",
+    "skill": "Resolución de problemas",
+    "level": "Maestro",
+    "type": "weekly",
+    "createdAt": "2025-02-24T11:15:00.177Z"
+  }
+]

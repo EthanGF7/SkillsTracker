@@ -1,0 +1,48 @@
+[
+  {
+    "id": "4722da94-54d9-4380-b619-56cb78da1d2b",
+    "title": "Cambio de Perspectiva en la Rutina",
+    "description": "Hoy, elige una actividad que realices de manera habitual y cámbiale al menos tres aspectos clave. Por ejemplo, si sueles tomar café por la mañana, prueba cambiar la hora, el lugar o incluso la bebida. El objetivo es observar cómo estos cambios afectan tu percepción y adaptabilidad a nuevas situaciones.",
+    "rules": [
+      "Selecciona una actividad rutinaria que realices diariamente.",
+      "Identifica y cambia al menos tres aspectos de esa actividad.",
+      "Reflexiona sobre cómo estos cambios influyen en tu día y tu capacidad de adaptación."
+    ],
+    "extraTip": "Intenta ser lo más creativo posible con los cambios. No se trata solo de cambiar por cambiar, sino de explorar nuevas formas de hacer las cosas que podrían mejorar tu experiencia o eficiencia.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-02-24T11:13:22.914Z"
+  },
+  {
+    "id": "dc97db15-6b39-41d0-8d40-0287a154ac3b",
+    "title": "Cambio de Perspectiva en 30 Minutos",
+    "description": "Hoy, tu reto es realizar una actividad cotidiana de una manera completamente diferente a la habitual. Por ejemplo, si siempre preparas el café de la misma forma, intenta usar un método distinto o un ingrediente nuevo. El objetivo es que te adaptes a una nueva forma de hacer algo que ya conoces, evaluando qué tan rápido puedes ajustarte y qué aprendes del proceso.",
+    "rules": [
+      "Elige una actividad que realices diariamente y que tenga al menos dos formas diferentes de ejecutarse.",
+      "Investiga o inventa una nueva manera de realizar esa actividad. Si es necesario, busca información rápida en línea, pero no dediques más de 10 minutos a esta búsqueda.",
+      "Implementa la nueva forma de realizar la actividad y toma nota de los desafíos que enfrentaste y cómo los superaste.",
+      "Reflexiona sobre la experiencia: ¿Qué fue lo más difícil de adaptar? ¿Qué aprendiste sobre ti mismo y tu capacidad de adaptación?"
+    ],
+    "extraTip": "No te preocupes si la nueva forma no es perfecta o si no te gusta tanto como la habitual. El objetivo es explorar y adaptarse, no necesariamente encontrar una mejor manera de hacer las cosas.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-02-24T11:13:49.885Z"
+  },
+  {
+    "id": "7512ea1f-949f-40ff-a025-90977fc90bd4",
+    "title": "El Laberinto de las Decisiones",
+    "description": "Imagina que eres el director de un proyecto crítico en una empresa tecnológica. Tu equipo ha identificado tres problemas principales que están retrasando el lanzamiento del producto. Tu reto es priorizar y resolver estos problemas en el orden que maximice el impacto positivo en el proyecto, utilizando un enfoque sistemático de resolución de problemas. Define claramente cada problema, propón soluciones viables y justifica tu orden de prioridad basándote en criterios objetivos como impacto, urgencia y recursos disponibles.",
+    "rules": [
+      "Identifica y describe claramente los tres problemas principales.",
+      "Propón al menos dos soluciones viables para cada problema.",
+      "Establece un orden de prioridad para resolver los problemas, justificando tu decisión con criterios objetivos."
+    ],
+    "extraTip": "Considera utilizar una matriz de decisión para evaluar y comparar las soluciones propuestas, teniendo en cuenta factores como el impacto, la viabilidad y el coste.",
+    "skill": "Resolución de problemas",
+    "level": "Maestro",
+    "type": "daily",
+    "createdAt": "2025-02-24T11:14:26.845Z"
+  }
+]
