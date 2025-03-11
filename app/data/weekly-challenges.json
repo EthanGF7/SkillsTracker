@@ -1,5 +1,53 @@
 [
   {
+    "id": "682bc790-7c81-4bdb-b734-ae71581ad121",
+    "title": "Semana de Escucha Activa y Conexión Emocional",
+    "description": "Durante esta semana, tu reto será practicar la escucha activa y conectar emocionalmente con al menos una persona diferente cada día. El objetivo es desarrollar tu capacidad para entender y compartir los sentimientos de otros, mejorando tu empatía en situaciones cotidianas y profesionales.",
+    "rules": [
+      "Cada día, selecciona una persona con la que interactúes (puede ser un compañero de trabajo, amigo, familiar o incluso un desconocido).",
+      "Durante la conversación, enfócate completamente en lo que la otra persona está diciendo, sin interrumpir ni pensar en tu respuesta mientras habla.",
+      "Haz preguntas abiertas para profundizar en sus sentimientos y perspectivas, como '¿Cómo te hizo sentir eso?' o '¿Qué fue lo más difícil para ti en esa situación?'.",
+      "Al final de la conversación, reflexiona sobre lo que aprendiste de sus emociones y cómo te hizo sentir a ti mismo.",
+      "Al final de la semana, escribe un breve resumen de tus experiencias y cómo crees que esta práctica ha mejorado tu empatía."
+    ],
+    "extraTip": "Intenta mantener contacto visual y usar lenguaje corporal que muestre interés, como asentir con la cabeza o inclinarte ligeramente hacia la persona mientras habla. Esto reforzará tu conexión emocional y hará que la otra persona se sienta más valorada.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-11T11:16:30.812Z"
+  },
+  {
+    "id": "f2692a98-4a1b-476f-95ef-020529fa0af4",
+    "title": "Semana de Escucha Activa",
+    "description": "Durante esta semana, tu objetivo será practicar la escucha activa en todas tus interacciones. La escucha activa es una forma profunda de empatía que implica prestar atención completa a lo que otros dicen, sin interrumpir, juzgar o pensar en tu respuesta mientras hablan. Este reto te ayudará a comprender mejor las perspectivas y emociones de los demás, fortaleciendo tus relaciones personales y profesionales.",
+    "rules": [
+      "Cada día, selecciona al menos una conversación para practicar la escucha activa. Puede ser con un compañero de trabajo, un amigo o un familiar.",
+      "Durante la conversación, enfócate completamente en la otra persona. Mantén contacto visual, asiente con la cabeza y usa frases como 'entiendo' o 'cuéntame más' para mostrar que estás prestando atención.",
+      "Al final de cada conversación, reflexiona sobre lo que has aprendido de la otra persona. Anota en un diario cualquier insight o emoción que hayas captado.",
+      "Al final de la semana, revisa tu diario y escribe un resumen de cómo esta práctica ha cambiado tu forma de interactuar con los demás."
+    ],
+    "extraTip": "Intenta no ofrecer soluciones o consejos a menos que te los pidan. A veces, las personas solo necesitan ser escuchadas y comprendidas.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-11T10:56:00.785Z"
+  },
+  {
+    "id": "4a8c18c6-3a14-42a7-9451-0dbc7d7138ed",
+    "title": "Semana de Escucha Activa",
+    "description": "Durante esta semana, tu reto será practicar la escucha activa en todas tus interacciones. El objetivo es profundizar tu comprensión de las emociones y perspectivas de los demás, desarrollando una mayor empatía. Al final de cada día, reflexionarás sobre lo que aprendiste de las personas con las que interactuaste.",
+    "rules": [
+      "1. En cada conversación, enfócate completamente en la otra persona, evitando distracciones.",
+      "2. Haz preguntas abiertas para entender mejor los sentimientos y pensamientos de los demás.",
+      "3. Al final del día, escribe en un diario tres cosas nuevas que aprendiste sobre las emociones de las personas con las que hablaste."
+    ],
+    "extraTip": "Intenta mantener contacto visual y asentir con la cabeza para mostrar que estás prestando atención. Esto ayudará a que la otra persona se sienta más cómoda y abierta a compartir.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-11T10:55:55.431Z"
+  },
+  {
     "id": "567ebf03-2604-4aba-984e-2ca16e9bfdca",
     "title": "Semana de Escucha Activa y Conexión Emocional",
     "description": "Durante esta semana, tu reto será practicar la escucha activa y conectar emocionalmente con al menos una persona diferente cada día. El objetivo es desarrollar tu capacidad para comprender y sentir las emociones de los demás, creando un espacio seguro para que se expresen.",

@@ -1,5 +1,50 @@
 [
   {
+    "id": "10cf1cbd-a159-42a4-90fd-38aa16495da9",
+    "title": "Escucha con los ojos cerrados",
+    "description": "Hoy, en al menos dos conversaciones, cierra los ojos mientras la otra persona habla. Concéntrate únicamente en su tono de voz, ritmo y emociones. Esto te ayudará a desarrollar una mayor sensibilidad hacia los estados emocionales de los demás, sin distracciones visuales.",
+    "rules": [
+      "Elige conversaciones de al menos 5 minutos",
+      "Mantén los ojos cerrados durante al menos 1 minuto seguido",
+      "Al final, comparte con la persona lo que percibiste de sus emociones"
+    ],
+    "extraTip": "Si te sientes incómodo cerrando los ojos, puedes mirar hacia abajo o fijar la vista en un punto neutro, pero mantén el enfoque en el sonido de la voz.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-11T11:16:05.957Z"
+  },
+  {
+    "id": "9562107d-327f-4490-9431-a8c965207e93",
+    "title": "Escucha con los ojos",
+    "description": "Hoy, durante tus conversaciones, enfócate en observar el lenguaje corporal de las personas mientras hablan. Nota sus expresiones faciales, gestos y postura, e intenta identificar qué emociones podrían estar sintiendo. Esto te ayudará a desarrollar tu capacidad para leer las emociones no verbales y conectar mejor con los demás.",
+    "rules": [
+      "Elige al menos 3 interacciones del día para practicar",
+      "No interrumpas, solo observa y escucha atentamente",
+      "Al final de cada conversación, reflexiona sobre lo que notaste"
+    ],
+    "extraTip": "Si te sientes cómodo, puedes hacer un comentario empático como 'Parece que esto te emociona mucho' para validar lo que observaste.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-11T10:55:35.974Z"
+  },
+  {
+    "id": "6e4cc909-a927-48d6-a169-9ca3f5507ee9",
+    "title": "Escucha con los ojos cerrados",
+    "description": "Hoy, durante al menos una conversación, cierra los ojos mientras escuchas a la otra persona. Esto te ayudará a concentrarte únicamente en sus palabras, tono de voz y emociones, desarrollando una mayor sensibilidad hacia lo que realmente están expresando.",
+    "rules": [
+      "Elige una conversación significativa para este ejercicio",
+      "Cierra los ojos durante al menos 2 minutos seguidos mientras escuchas",
+      "Concéntrate en captar las emociones detrás de las palabras"
+    ],
+    "extraTip": "Después de la conversación, reflexiona sobre qué nuevas cosas notaste al eliminar la distracción visual.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-11T10:55:33.734Z"
+  },
+  {
     "id": "ff6d8d38-e919-4cfb-9a03-5fc9de19e59d",
     "title": "Diario de Emociones Ajenas",
     "description": "Hoy, dedica tiempo a observar y anotar las emociones que percibes en las personas con las que interactúas. Esto te ayudará a desarrollar tu capacidad para reconocer y entender los sentimientos de los demás.",
