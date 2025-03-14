@@ -1,5 +1,382 @@
 [
   {
+    "id": "a071a215-01c3-4372-a2cb-07ef229af623",
+    "title": "Lidera una reunión efectiva",
+    "description": "Organiza y lidera una reunión con tu equipo o grupo de trabajo, enfocándote en establecer objetivos claros, fomentar la participación de todos y mantener el enfoque en los temas importantes. Este reto te ayudará a desarrollar habilidades de comunicación, organización y motivación de equipos.",
+    "rules": [
+      "Prepara una agenda clara y concisa antes de la reunión.",
+      "Asigna roles específicos a los participantes (ej. toma de notas, moderador).",
+      "Facilita la participación de todos los miembros y asegúrate de que se escuchen todas las opiniones.",
+      "Resume los puntos clave y las acciones a seguir al final de la reunión."
+    ],
+    "extraTip": "Practica la escucha activa y muestra empatía hacia las preocupaciones de los miembros del equipo para fomentar un ambiente de confianza y colaboración.",
+    "skill": "Liderazgo",
+    "level": "Aprendiz",
+    "type": "weekly",
+    "createdAt": "2025-03-14T11:50:12.014Z"
+  },
+  {
+    "id": "a89b9a92-daab-442c-967f-f490ed283d7c",
+    "title": "Explorar una nueva rutina matutina",
+    "description": "Esta semana, cambia completamente tu rutina matutina para mejorar tu capacidad de adaptación. Elige actividades diferentes a las que normalmente haces, como meditar, hacer ejercicio, leer o cocinar un desayuno nuevo. El objetivo es salir de tu zona de confort y aprender a manejar cambios en tu día a día.",
+    "rules": [
+      "Planifica una nueva rutina matutina antes de que comience la semana.",
+      "Implementa la nueva rutina todos los días durante la semana.",
+      "Reflexiona cada noche sobre cómo te sentiste con los cambios y qué aprendiste."
+    ],
+    "extraTip": "Mantén una actitud abierta y positiva hacia los cambios. Si algo no funciona, ajusta la rutina al día siguiente sin frustrarte.",
+    "skill": "Adaptabilidad",
+    "level": "Aprendiz",
+    "type": "weekly",
+    "createdAt": "2025-03-14T11:46:01.189Z"
+  },
+  {
+    "id": "218e3b8c-8a94-4c06-9e75-fa191f5476bb",
+    "title": "Reinventa un objeto cotidiano",
+    "description": "Selecciona un objeto común que uses diariamente y rediseña completamente su función y forma. El objetivo es transformarlo en algo completamente nuevo e innovador, manteniendo solo su esencia original. Este reto te ayudará a desarrollar tu capacidad de pensamiento lateral y a ver posibilidades donde otros solo ven limitaciones.",
+    "rules": [
+      "Elige un objeto que uses al menos una vez al día",
+      "No puedes cambiar el material principal del objeto",
+      "La nueva función debe ser útil y práctica",
+      "Documenta el proceso de transformación con bocetos o fotos"
+    ],
+    "extraTip": "Intenta pensar en problemas cotidianos que podrías resolver con tu nuevo diseño. Esto añadirá un propósito más profundo a tu creación.",
+    "skill": "Creatividad",
+    "level": "Maestro",
+    "type": "weekly",
+    "createdAt": "2025-03-14T11:31:30.746Z"
+  },
+  {
+    "id": "fa8f75c9-b8a0-40ba-bb64-61f7650e32a9",
+    "title": "Semana de la Comunicación Asertiva",
+    "description": "Durante esta semana, practicarás la asertividad en diferentes situaciones cotidianas, aprendiendo a expresar tus pensamientos y necesidades de manera clara y respetuosa, mientras respetas los derechos de los demás. Este reto te ayudará a desarrollar confianza en tu comunicación y a establecer límites saludables.",
+    "rules": [
+      "Identifica al menos 3 situaciones diarias en las que puedas practicar la asertividad (ej. en el trabajo, con amigos, en casa).",
+      "Antes de hablar, piensa en cómo expresar tu mensaje de manera clara y respetuosa.",
+      "Reflexiona al final del día sobre cómo te sentiste al ser asertivo y qué podrías mejorar."
+    ],
+    "extraTip": "Lleva un diario de asertividad donde anotes las situaciones, lo que dijiste y cómo te sentiste. Esto te ayudará a ver tu progreso y a identificar áreas de mejora.",
+    "skill": "Asertividad",
+    "level": "Aprendiz",
+    "type": "weekly",
+    "createdAt": "2025-03-14T11:27:08.492Z"
+  },
+  {
+    "id": "cca3db1c-bdb5-4a90-9135-4cba336ba03f",
+    "title": "Diseño de un Sistema de Gestión del Tiempo Personalizado",
+    "description": "Este reto consiste en crear un sistema completo de gestión del tiempo que se adapte a tus necesidades específicas, integrando técnicas avanzadas como el time blocking, la matriz de Eisenhower y el seguimiento detallado de actividades. El objetivo es maximizar tu eficiencia y reducir el tiempo perdido en tareas no esenciales.",
+    "rules": [
+      "Identifica y categoriza todas tus actividades diarias y semanales en una lista detallada.",
+      "Utiliza la matriz de Eisenhower para priorizar tareas en base a su importancia y urgencia.",
+      "Implementa el time blocking para asignar bloques de tiempo específicos a cada categoría de tareas.",
+      "Crea un sistema de seguimiento diario para monitorear el tiempo real dedicado a cada actividad.",
+      "Revisa y ajusta tu sistema al final de la semana para optimizar la planificación futura."
+    ],
+    "extraTip": "Considera usar herramientas digitales como Trello, Notion o Google Calendar para automatizar y visualizar tu sistema de gestión del tiempo.",
+    "skill": "Gestión del tiempo",
+    "level": "Maestro",
+    "type": "weekly",
+    "createdAt": "2025-03-14T09:32:46.513Z"
+  },
+  {
+    "id": "420271ec-1885-45ad-84ae-8534938e733a",
+    "title": "Semana de Límites Asertivos",
+    "description": "Durante esta semana, practica establecer límites claros y respetuosos en diferentes situaciones de tu vida diaria. El objetivo es que aprendas a decir 'no' cuando sea necesario y a expresar tus necesidades sin sentirte culpable. Esto te ayudará a fortalecer tu autoconfianza y a mejorar tus relaciones interpersonales.",
+    "rules": [
+      "Identifica al menos tres situaciones en las que normalmente te cuesta decir 'no' o expresar tus necesidades.",
+      "Prepara respuestas asertivas para cada una de estas situaciones, utilizando un lenguaje claro y respetuoso.",
+      "Implementa estas respuestas durante la semana, observando cómo te sientes y cómo reaccionan los demás."
+    ],
+    "extraTip": "Recuerda que ser asertivo no significa ser agresivo. Practica mantener un tono de voz calmado y un lenguaje corporal abierto y relajado.",
+    "skill": "Asertividad",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-14T09:27:49.782Z"
+  },
+  {
+    "id": "20a1bcfa-5386-4a33-8d09-0fc6beb84ec0",
+    "title": "Semana de la Comunicación Asertiva",
+    "description": "Durante esta semana, practica la asertividad en diferentes situaciones cotidianas, desde expresar tus opiniones hasta establecer límites claros. El objetivo es que te sientas más cómodo comunicando tus necesidades de manera respetuosa y directa, mientras desarrollas confianza en tu capacidad para mantener el equilibrio entre empatía y firmeza.",
+    "rules": [
+      "Identifica al menos 3 situaciones diarias donde puedas practicar la asertividad (ej: en el trabajo, con amigos, en casa).",
+      "Prepara frases asertivas para cada situación, usando un tono claro y respetuoso.",
+      "Reflexiona al final del día sobre cómo te sentiste al expresarte y cómo fue recibida tu comunicación."
+    ],
+    "extraTip": "Lleva un diario de asertividad donde anotes las situaciones, tus frases y las respuestas de los demás. Esto te ayudará a identificar patrones y mejorar tu enfoque.",
+    "skill": "Asertividad",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-14T09:27:39.276Z"
+  },
+  {
+    "id": "f4cb540e-1b5d-4185-848b-bb66d6f83821",
+    "title": "Diario de Emociones Ajenas",
+    "description": "Durante una semana, dedica tiempo cada día a observar y documentar las emociones de las personas que te rodean. Este ejercicio te ayudará a desarrollar tu capacidad para reconocer y comprender los sentimientos de los demás, mejorando tu empatía.",
+    "rules": [
+      "Elige un momento del día para observar a las personas en tu entorno (familia, amigos, compañeros de trabajo, etc.).",
+      "Anota en un diario las emociones que percibes en al menos tres personas diferentes cada día.",
+      "Reflexiona sobre cómo podrías haber respondido de manera más empática en cada situación observada."
+    ],
+    "extraTip": "Intenta no hacer suposiciones rápidas sobre las emociones de los demás. Pregúntate qué podría estar causando esas emociones y cómo te sentirías tú en su lugar.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-14T08:12:46.476Z"
+  },
+  {
+    "id": "4b4ac265-019c-4652-89d3-692f4b827f3e",
+    "title": "Diario de Emociones Ajenas",
+    "description": "Durante una semana, lleva un diario donde documentes las emociones que percibes en otras personas a lo largo del día. Este ejercicio te ayudará a desarrollar tu capacidad para reconocer y comprender los sentimientos de los demás, mejorando tu empatía.",
+    "rules": [
+      "Observa a las personas con las que interactúas o ves en tu entorno.",
+      "Anota al menos tres emociones diferentes que percibas cada día.",
+      "Reflexiona sobre cómo esas emociones podrían estar influyendo en el comportamiento de esas personas."
+    ],
+    "extraTip": "Intenta no solo identificar las emociones, sino también pensar en cómo podrías apoyar o responder de manera empática a esas personas.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-14T08:12:43.228Z"
+  },
+  {
+    "id": "d4271d93-cb8b-4146-bdbc-d742bad0d6e5",
+    "title": "Diario de Empatía: Una Semana en los Zapatos de Otros",
+    "description": "Durante una semana, lleva un diario donde documentes las emociones y perspectivas de las personas con las que interactúas. Este ejercicio te ayudará a desarrollar una mayor comprensión y conexión emocional con los demás, mejorando tu capacidad para empatizar en situaciones cotidianas y profesionales.",
+    "rules": [
+      "Cada día, selecciona al menos una persona con la que interactúes (puede ser un compañero de trabajo, amigo, familiar o incluso un desconocido).",
+      "Observa y escucha atentamente sus palabras, tono de voz y lenguaje corporal.",
+      "Anota en tu diario lo que crees que están sintiendo y por qué. Incluye también cómo te sientes tú al empatizar con ellos.",
+      "Al final de la semana, revisa tus notas y reflexiona sobre lo que has aprendido sobre las emociones de los demás y cómo esto ha influido en tus interacciones."
+    ],
+    "extraTip": "Intenta no hacer suposiciones rápidas. Pregúntate siempre si hay algo más detrás de lo que la persona está expresando. Esto te ayudará a profundizar en tu comprensión emocional.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-14T08:08:40.002Z"
+  },
+  {
+    "id": "1ce9d021-becf-42de-bd23-56158c8b4df1",
+    "title": "Diario de Emociones Ajenas",
+    "description": "Durante una semana, lleva un diario donde documentes las emociones que percibes en otras personas a lo largo del día. Este ejercicio te ayudará a desarrollar tu capacidad para reconocer y comprender los sentimientos de los demás, mejorando tu empatía.",
+    "rules": [
+      "Observa a las personas con las que interactúas diariamente (familiares, amigos, compañeros de trabajo, etc.).",
+      "Anota en tu diario al menos tres emociones diferentes que percibas cada día.",
+      "Reflexiona sobre cómo esas emociones podrían estar influyendo en el comportamiento de esas personas."
+    ],
+    "extraTip": "Intenta no hacer suposiciones rápidas. Pregúntate qué podría estar causando esas emociones y cómo te sentirías tú en su lugar.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-14T08:08:38.185Z"
+  },
+  {
+    "id": "8c778018-7a2d-4f40-95c9-14b9679a1042",
+    "title": "Diario de Emociones Ajenas",
+    "description": "Durante una semana, dedica 10 minutos diarios a observar e identificar las emociones de las personas que te rodean (compañeros de trabajo, familiares, amigos). Anota en un diario lo que percibes y cómo crees que se sienten, basándote en su lenguaje corporal, tono de voz y expresiones faciales. Al final de la semana, reflexiona sobre cómo esta práctica ha influido en tu capacidad para conectar con los demás.",
+    "rules": [
+      "Elige un momento del día para realizar la observación (por ejemplo, durante el almuerzo o en una reunión).",
+      "Anota al menos 3 emociones diferentes que identifiques cada día.",
+      "No juzgues ni asumas, solo describe lo que observas y cómo interpretas esas emociones."
+    ],
+    "extraTip": "Si te sientes cómodo, puedes preguntar a alguien cercano cómo se siente realmente para comparar tu percepción con la realidad y ajustar tu empatía.",
+    "skill": "Empatía",
+    "level": "Aprendiz",
+    "type": "weekly",
+    "createdAt": "2025-03-13T09:34:54.527Z"
+  },
+  {
+    "id": "b49a2901-ff59-4e28-b639-f1af2d955744",
+    "title": "Semana de Rutinas Cambiantes",
+    "description": "Esta semana, tu reto es modificar tu rutina diaria de manera significativa cada día. El objetivo es salir de tu zona de confort y adaptarte a nuevas formas de hacer las cosas, lo que mejorará tu capacidad para manejar cambios y situaciones inesperadas.",
+    "rules": [
+      "Cambia tu horario de sueño y despertar al menos una hora más temprano o más tarde.",
+      "Prueba una nueva forma de transporte para ir al trabajo o a tus actividades diarias.",
+      "Incorpora una actividad completamente nueva en tu día, como un deporte, un hobby o una clase.",
+      "Modifica tu dieta introduciendo al menos un alimento nuevo cada día.",
+      "Dedica tiempo cada día a reflexionar sobre cómo te sentiste con los cambios y qué aprendiste."
+    ],
+    "extraTip": "Mantén un diario de tus experiencias y emociones durante la semana. Esto te ayudará a identificar patrones y áreas donde puedes mejorar tu adaptabilidad.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-13T09:33:55.559Z"
+  },
+  {
+    "id": "cc3b8259-7d62-48f0-b7e1-ba8c16ed777e",
+    "title": "Semana de la Rutina Invertida",
+    "description": "Este reto consiste en invertir completamente tu rutina diaria durante una semana para mejorar tu capacidad de adaptación y flexibilidad mental. Al cambiar el orden de tus actividades habituales, te enfrentarás a nuevas situaciones y aprenderás a manejar la incertidumbre de manera más efectiva.",
+    "rules": [
+      "Cambia el horario de tus comidas principales (desayuna a la hora de la cena y viceversa).",
+      "Realiza tus actividades nocturnas durante el día y las diurnas por la noche (si es posible y seguro).",
+      "Prueba una nueva forma de transporte o ruta para ir al trabajo o realizar tus actividades diarias."
+    ],
+    "extraTip": "Mantén un diario para registrar tus experiencias y reflexiones sobre cómo te sientes con estos cambios. Esto te ayudará a identificar qué aspectos de la adaptación te resultan más desafiantes y cómo puedes mejorar.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-13T09:31:52.982Z"
+  },
+  {
+    "id": "875cba36-8143-43f0-ba37-c1cbbe4f6dec",
+    "title": "Semana de la Rutina Invertida",
+    "description": "Esta semana, tu reto es invertir completamente tu rutina diaria para mejorar tu capacidad de adaptación a cambios significativos. Cambiarás tus horarios, actividades y hábitos para experimentar cómo te adaptas a nuevas situaciones y descubrir nuevas formas de hacer las cosas.",
+    "rules": [
+      "Cambia tu hora de despertar y acostarte al menos 2 horas antes o después de lo habitual.",
+      "Realiza tus actividades principales (trabajo, estudio, ejercicio) en un orden diferente al habitual.",
+      "Prueba al menos 3 nuevas actividades que nunca hayas hecho antes, como cocinar una receta nueva, aprender un baile o visitar un lugar desconocido."
+    ],
+    "extraTip": "Mantén un diario de adaptación donde anotes cómo te sientes con los cambios y qué estrategias usas para ajustarte. Esto te ayudará a reflexionar sobre tu capacidad de adaptación y a identificar áreas de mejora.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-13T09:31:50.956Z"
+  },
+  {
+    "id": "41b73beb-9690-4979-9143-58c00c624ab9",
+    "title": "Diario de Perspectivas Emocionales",
+    "description": "Durante una semana, documenta y analiza las emociones y perspectivas de diferentes personas en tu entorno. Este ejercicio te ayudará a profundizar en tu comprensión de las emociones ajenas y a desarrollar una empatía más profunda y auténtica.",
+    "rules": [
+      "Selecciona al menos 3 personas diferentes cada día (pueden ser compañeros de trabajo, amigos, familiares o incluso desconocidos).",
+      "Observa sus expresiones faciales, lenguaje corporal y tono de voz para identificar sus emociones.",
+      "Escribe en un diario tus observaciones, incluyendo cómo crees que se sienten y por qué.",
+      "Al final de la semana, reflexiona sobre cómo estas observaciones han influido en tu comprensión y conexión con los demás."
+    ],
+    "extraTip": "Intenta tener una breve conversación con algunas de las personas para confirmar tus observaciones y ajustar tu percepción si es necesario. Esto te ayudará a afinar tu habilidad para leer emociones.",
+    "skill": "Empatía",
+    "level": "Maestro",
+    "type": "weekly",
+    "createdAt": "2025-03-12T11:25:49.378Z"
+  },
+  {
+    "id": "ee605e2f-8a70-4692-8c0a-418b5ec454ce",
+    "title": "Diario de Perspectivas Cruzadas",
+    "description": "Durante una semana, selecciona a 5 personas de diferentes contextos sociales, profesionales o culturales. Investiga y documenta sus desafíos diarios, preocupaciones y alegrías. Al final de la semana, escribe un ensayo reflexivo comparando estas experiencias con las tuyas, identificando puntos de conexión y diferencias. Este ejercicio profundizará tu comprensión de las realidades ajenas y fortalecerá tu capacidad para conectar emocionalmente con personas diversas.",
+    "rules": [
+      "Selecciona personas con experiencias de vida significativamente diferentes a las tuyas",
+      "Dedica al menos 30 minutos diarios a investigar y reflexionar sobre cada persona",
+      "Mantén un enfoque respetuoso y objetivo en tu documentación"
+    ],
+    "extraTip": "Considera entrevistar directamente a las personas seleccionadas para obtener perspectivas más auténticas y detalladas.",
+    "skill": "Empatía",
+    "level": "Maestro",
+    "type": "weekly",
+    "createdAt": "2025-03-12T11:25:45.811Z"
+  },
+  {
+    "id": "717f6d12-affe-4693-b583-6c6cf19680b8",
+    "title": "Inmersión Emocional en Otra Cultura",
+    "description": "Durante una semana, sumérgete profundamente en una cultura diferente a la tuya, ya sea a través de la interacción directa con personas de esa cultura o mediante investigación profunda. El objetivo es comprender sus valores, desafíos y perspectivas emocionales. Al final de la semana, escribe un ensayo reflexivo sobre lo que aprendiste y cómo esta experiencia ha cambiado tu perspectiva.",
+    "rules": [
+      "Elige una cultura con la que tengas poco o ningún contacto previo.",
+      "Interactúa diariamente con al menos una persona de esa cultura, ya sea en persona o en línea.",
+      "Investiga sobre las tradiciones, historia y desafíos actuales de esa cultura.",
+      "Reflexiona diariamente sobre cómo las experiencias y emociones de esa cultura difieren de las tuyas.",
+      "Escribe un ensayo al final de la semana que resuma tus aprendizajes y reflexiones."
+    ],
+    "extraTip": "Mantén una mente abierta y evita hacer juicios rápidos. Escucha activamente y haz preguntas respetuosas para profundizar tu comprensión.",
+    "skill": "Empatía",
+    "level": "Maestro",
+    "type": "weekly",
+    "createdAt": "2025-03-12T09:13:22.688Z"
+  },
+  {
+    "id": "19ae6926-1303-40ff-b31a-ae8cf940a44f",
+    "title": "Inmersión en la vida de otro",
+    "description": "Durante una semana, selecciona a una persona con una vida muy diferente a la tuya (puede ser un compañero de trabajo, vecino o conocido) y comprométete a comprender profundamente su perspectiva. Esto incluye observar sus rutinas, desafíos y emociones. Al final de la semana, escribe un informe detallado sobre lo que has aprendido y cómo esta experiencia ha cambiado tu percepción.",
+    "rules": [
+      "Elige a alguien con quien normalmente no interactúas mucho.",
+      "Dedica al menos una hora cada día a observar o interactuar con esta persona.",
+      "Mantén un diario donde registres tus observaciones y reflexiones diarias.",
+      "No juzgues ni critiques; solo observa y aprende.",
+      "Al final de la semana, comparte tus hallazgos con la persona y discute cómo esta experiencia ha impactado tu empatía hacia ella."
+    ],
+    "extraTip": "Considera usar técnicas de escucha activa y preguntas abiertas para profundizar en la comprensión de la perspectiva de la otra persona.",
+    "skill": "Empatía",
+    "level": "Maestro",
+    "type": "weekly",
+    "createdAt": "2025-03-12T09:13:21.393Z"
+  },
+  {
+    "id": "753f3c04-8ecb-4100-aee5-bf4763cb9b1e",
+    "title": "Semana de Escucha Activa y Conexión Emocional",
+    "description": "Durante esta semana, tu reto será practicar la escucha activa y conectar emocionalmente con al menos una persona diferente cada día. El objetivo es desarrollar tu capacidad para comprender y compartir los sentimientos de los demás, mejorando tus habilidades de empatía en situaciones cotidianas y profesionales.",
+    "rules": [
+      "Selecciona una persona diferente cada día (puede ser un compañero de trabajo, amigo, familiar o incluso un desconocido en un contexto adecuado).",
+      "Dedica al menos 15 minutos a una conversación donde te enfoques completamente en escuchar sin interrumpir, haciendo preguntas abiertas y mostrando interés genuino.",
+      "Reflexiona al final de cada día sobre lo que aprendiste de la experiencia emocional de la otra persona y cómo te hizo sentir.",
+      "Al final de la semana, escribe un resumen de tus observaciones y cómo estas interacciones han impactado tu perspectiva y empatía."
+    ],
+    "extraTip": "Intenta mantener contacto visual y usar lenguaje corporal abierto durante las conversaciones para mostrar que estás realmente presente y comprometido con la interacción.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-12T08:53:24.994Z"
+  },
+  {
+    "id": "233add9b-1060-4738-907a-7a1e9c33e2fb",
+    "title": "Semana del Compañero Invisible",
+    "description": "Durante una semana, selecciona a una persona en tu entorno (compañero de trabajo, vecino, familiar) que normalmente pasa desapercibida. Observa sus acciones, lenguaje corporal y emociones sin que se den cuenta. Cada día, realiza un pequeño gesto empático basado en lo que has observado, como dejar una nota de ánimo, ofrecer ayuda en algo que necesiten o simplemente escuchar activamente cuando hablen. Al final de la semana, reflexiona sobre cómo estas acciones han impactado en su estado emocional y en tu propia percepción de la empatía.",
+    "rules": [
+      "Selecciona a una persona que normalmente no recibe mucha atención.",
+      "Observa discretamente sus comportamientos y emociones durante la semana.",
+      "Realiza al menos un gesto empático cada día basado en tus observaciones.",
+      "No reveles que estás realizando este reto a menos que sea absolutamente necesario.",
+      "Reflexiona al final de la semana sobre lo que has aprendido y cómo te has sentido."
+    ],
+    "extraTip": "Mantén un diario donde anotes tus observaciones y los gestos que realizas cada día. Esto te ayudará a ser más consciente de los detalles y a profundizar en tu comprensión empática.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-12T08:53:22.908Z"
+  },
+  {
+    "id": "1afaade4-104d-4509-b829-73c5d3dc932c",
+    "title": "Transforma tu rutina diaria en una obra de arte",
+    "description": "Durante esta semana, convierte tus actividades cotidianas en expresiones artísticas. Elige al menos 3 momentos de tu día (como desayunar, ir al trabajo o hacer ejercicio) y reimagínalos como si fueran parte de una obra de arte. Puedes usar fotografía, dibujo, escritura creativa o cualquier medio que prefieras para capturar y transformar estos momentos.",
+    "rules": [
+      "Elige 3 actividades diarias diferentes",
+      "Reinterpreta cada actividad desde una perspectiva artística",
+      "Crea una representación tangible de cada momento (foto, dibujo, poema, etc.)",
+      "Reflexiona sobre cómo esta transformación afecta tu percepción de lo cotidiano"
+    ],
+    "extraTip": "Lleva contigo un pequeño cuaderno o usa tu teléfono para capturar ideas e inspiraciones a lo largo del día. No te limites a lo visual - explora también sonidos, texturas y emociones asociadas con cada actividad.",
+    "skill": "Creatividad",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-12T08:22:15.710Z"
+  },
+  {
+    "id": "ee3f239b-39b6-457f-ba52-cc10a9968fe2",
+    "title": "Crea tu propio mundo imaginario",
+    "description": "Durante esta semana, desarrollarás un mundo imaginario completo, incluyendo su geografía, cultura, habitantes y reglas únicas. Este ejercicio estimulará tu creatividad al máximo, permitiéndote explorar nuevas ideas y conexiones inesperadas.",
+    "rules": [
+      "Dedica al menos 30 minutos cada día a desarrollar diferentes aspectos de tu mundo",
+      "Incluye al menos 3 elementos únicos que no existan en nuestro mundo",
+      "Crea un mapa visual o diagrama que represente tu mundo",
+      "Escribe una breve historia que tenga lugar en este mundo"
+    ],
+    "extraTip": "Inspírate en elementos de la naturaleza, mitologías o culturas antiguas para crear aspectos únicos de tu mundo. No te limites por lo que es posible en la realidad.",
+    "skill": "Creatividad",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-12T08:22:13.338Z"
+  },
+  {
+    "id": "c1c68c8e-75dc-4d67-b83e-09380dbcbea1",
+    "title": "Semana de Escucha Activa",
+    "description": "Durante esta semana, tu objetivo será practicar la escucha activa en todas tus interacciones. Esto significa prestar atención plena a lo que dicen los demás, sin interrumpir, juzgar o pensar en tu respuesta mientras hablan. Al final de cada día, reflexiona sobre cómo esta práctica afectó tus conversaciones y relaciones.",
+    "rules": [
+      "1. En cada conversación, concéntrate completamente en la persona que está hablando.",
+      "2. Haz preguntas abiertas para profundizar en lo que la otra persona está compartiendo.",
+      "3. Al final del día, escribe en un diario cómo te sentiste al practicar la escucha activa y qué aprendiste sobre las personas con las que hablaste."
+    ],
+    "extraTip": "Intenta mantener contacto visual y asentir con la cabeza para mostrar que estás escuchando. Esto puede hacer que la otra persona se sienta más valorada y comprendida.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "weekly",
+    "createdAt": "2025-03-11T11:20:20.823Z"
+  },
+  {
     "id": "682bc790-7c81-4bdb-b734-ae71581ad121",
     "title": "Semana de Escucha Activa y Conexión Emocional",
     "description": "Durante esta semana, tu reto será practicar la escucha activa y conectar emocionalmente con al menos una persona diferente cada día. El objetivo es desarrollar tu capacidad para entender y compartir los sentimientos de otros, mejorando tu empatía en situaciones cotidianas y profesionales.",

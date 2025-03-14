@@ -54,10 +54,25 @@ export default function Dashboard({ selectedSkills, skillLevels, initialChalleng
   const [showWaitingMessage, setShowWaitingMessage] = useState(false)
 
   // Estados de retos y progreso
-  const [currentChallenges, setCurrentChallenges] = useState<Record<string, SkillChallenges>>(initialChallenges || {})
+  const [currentChallenges, setCurrentChallenges] = useState<Record<string, SkillChallenges>>(() => {
+    // Intentar cargar retos guardados del localStorage
+    if (typeof window !== 'undefined') {
+      const savedChallenges = localStorage.getItem('savedChallenges')
+      if (savedChallenges) {
+        try {
+          return JSON.parse(savedChallenges)
+        } catch (e) {
+          console.error('Error parsing saved challenges:', e)
+        }
+      }
+    }
+    return initialChallenges || {}
+  })
+
   const [generatedSkills, setGeneratedSkills] = useState<Set<string>>(
     new Set(initialChallenges ? Object.keys(initialChallenges) : [])
   )
+
   const [completedChallenges, setCompletedChallenges] = useState<Record<string, Set<"daily" | "weekly">>>(() => {
     return selectedSkills.reduce((acc, skill) => {
       acc[skill] = new Set()
@@ -105,6 +120,13 @@ export default function Dashboard({ selectedSkills, skillLevels, initialChalleng
   // Estado para controlar las generaciones en curso
   const [generationInProgress, setGenerationInProgress] = useState(false)
 
+  // Efecto para guardar los retos en localStorage cuando cambien
+  useEffect(() => {
+    if (typeof window !== 'undefined' && Object.keys(currentChallenges).length > 0) {
+      localStorage.setItem('savedChallenges', JSON.stringify(currentChallenges))
+    }
+  }, [currentChallenges])
+
   // Efecto para generar retos cuando se selecciona una habilidad
   useEffect(() => {
     if (!selectedSkill || !skillsProgress[selectedSkill] || generationInProgress) {
@@ -121,45 +143,63 @@ export default function Dashboard({ selectedSkills, skillLevels, initialChalleng
       setLoadingState(prev => ({ ...prev, [selectedSkill]: true }))
       setError(null)
 
-      // Configurar el temporizador para mostrar el mensaje después de 4 segundos
-      const messageTimer = setTimeout(() => {
-        setShowWaitingMessage(true)
-      }, 4000)
-
       try {
         const level = skillsProgress[selectedSkill].title
-        
-        // Generar un nuevo reto diario
-        const daily = await generateMicroChallenge({
-          skill: selectedSkill,
-          level,
-          type: 'daily'
-        })
+        let daily, weekly
 
-        // Pequeña pausa para evitar sobrecarga de la API
-        await new Promise(resolve => setTimeout(resolve, 1000))
+        // Intentar generar los retos con reintentos
+        for (let attempt = 0; attempt < 3; attempt++) {
+          try {
+            // Generar un nuevo reto diario
+            daily = await generateMicroChallenge({
+              skill: selectedSkill,
+              level,
+              type: 'daily'
+            })
 
-        // Generar un nuevo reto semanal
-        const weekly = await generateMicroChallenge({
-          skill: selectedSkill,
-          level,
-          type: 'weekly'
-        })
+            // Pequeña pausa para evitar sobrecarga de la API
+            await new Promise(resolve => setTimeout(resolve, 1000))
+
+            // Generar un nuevo reto semanal
+            weekly = await generateMicroChallenge({
+              skill: selectedSkill,
+              level,
+              type: 'weekly'
+            })
+
+            if (daily && weekly) {
+              break // Si ambos retos se generaron correctamente, salimos del bucle
+            }
+          } catch (e) {
+            console.error(`Intento ${attempt + 1} fallido:`, e)
+            if (attempt === 2) throw e // En el último intento, propagamos el error
+            await new Promise(resolve => setTimeout(resolve, 2000)) // Esperar antes de reintentar
+          }
+        }
 
         if (!daily || !weekly) {
           throw new Error('Error generando los retos')
         }
 
         // Actualizar el estado con los nuevos retos
-        setCurrentChallenges(prev => ({
-          ...prev,
-          [selectedSkill]: { daily, weekly }
-        }))
+        setCurrentChallenges(prev => {
+          const updated = {
+            ...prev,
+            [selectedSkill]: { daily, weekly }
+          }
+          // Guardar en localStorage inmediatamente
+          if (typeof window !== 'undefined') {
+            localStorage.setItem('savedChallenges', JSON.stringify(updated))
+          }
+          return updated
+        })
+
+        // Actualizar el conjunto de habilidades generadas
+        setGeneratedSkills(prev => new Set([...prev, selectedSkill]))
       } catch (error) {
         console.error('Error:', error)
         setError(error instanceof Error ? error.message : 'Error generando los retos')
       } finally {
-        clearTimeout(messageTimer)
         setShowWaitingMessage(false)
         setGenerationInProgress(false)
         setLoadingState(prev => ({ ...prev, [selectedSkill]: false }))

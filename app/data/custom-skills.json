@@ -1,0 +1,19 @@
+{
+  "custom-skills": {
+    "Asertividad": {
+      "description": "La asertividad es una habilidad fundamental que permite expresar pensamientos, sentimientos y necesidades de manera clara, directa y respetuosa, manteniendo un equilibrio entre los derechos propios y los de los demás. Esta competencia es esencial para establecer relaciones interpersonales saludables y alcanzar objetivos personales y profesionales.",
+      "keyPoints": [
+        "Expresar opiniones y necesidades de manera clara y respetuosa",
+        "Establecer límites saludables en las relaciones",
+        "Mantener el equilibrio entre la empatía y la firmeza",
+        "Desarrollar la autoconfianza en la comunicación"
+      ],
+      "examples": [
+        "Practicar la comunicación asertiva en situaciones cotidianas",
+        "Expresar desacuerdos de manera constructiva",
+        "Defender puntos de vista respetando otras opiniones"
+      ],
+      "createdAt": "2025-03-14T08:19:32.013Z"
+    }
+  }
+}

@@ -1,10 +1,14 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Checkbox } from "@/components/ui/checkbox"
+import dynamic from 'next/dynamic'
+
+// Importación dinámica de componentes UI
+const Button = dynamic(() => import("@/components/ui/button").then(mod => mod.Button), { ssr: false })
+const Input = dynamic(() => import("@/components/ui/input").then(mod => mod.Input), { ssr: false })
+const Label = dynamic(() => import("@/components/ui/label").then(mod => mod.Label), { ssr: false })
+const Checkbox = dynamic(() => import("@/components/ui/checkbox").then(mod => mod.Checkbox), { ssr: false })
+
 import { EyeIcon, EyeOffIcon } from "lucide-react"
 import OnboardingFlow from "./onboarding-flow"
 import Header from "./header"

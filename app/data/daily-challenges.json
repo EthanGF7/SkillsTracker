@@ -1,5 +1,441 @@
 [
   {
+    "id": "305fcde8-bfbf-40f5-bf8e-4315457a2643",
+    "title": "Inicia una reunión con propósito",
+    "description": "Hoy, toma la iniciativa de organizar y liderar una breve reunión de equipo (5-10 minutos). Define un objetivo claro para la reunión, como resolver un problema específico o alinear a todos en una tarea importante. Practica mantener el enfoque y asegúrate de que todos participen.",
+    "rules": [
+      "Define un objetivo claro antes de la reunión",
+      "Mantén la reunión breve y enfocada",
+      "Fomenta la participación de todos los miembros del equipo"
+    ],
+    "extraTip": "Prepara un par de preguntas abiertas para fomentar la discusión y asegúrate de escuchar activamente las respuestas.",
+    "skill": "Liderazgo",
+    "level": "Aprendiz",
+    "type": "daily",
+    "createdAt": "2025-03-14T11:49:46.147Z"
+  },
+  {
+    "id": "bcc58610-c68a-4b8f-8af3-0354038f9931",
+    "title": "Cambia tu ruta habitual",
+    "description": "Hoy, elige una ruta diferente para ir al trabajo, la escuela o cualquier lugar que visites regularmente. Este pequeño cambio te ayudará a salir de tu zona de confort y a adaptarte a nuevas situaciones, mejorando tu flexibilidad mental.",
+    "rules": [
+      "Planifica una ruta alternativa la noche anterior o por la mañana.",
+      "No uses GPS a menos que sea absolutamente necesario.",
+      "Observa y anota cualquier cosa nueva o interesante que veas durante el camino."
+    ],
+    "extraTip": "Intenta mantener una actitud positiva y curiosa durante el viaje, incluso si te sientes un poco incómodo al principio.",
+    "skill": "Adaptabilidad",
+    "level": "Aprendiz",
+    "type": "daily",
+    "createdAt": "2025-03-14T11:45:41.574Z"
+  },
+  {
+    "id": "374d01ea-5e10-47c0-9daa-585ecab91390",
+    "title": "Reinventa un objeto cotidiano",
+    "description": "Selecciona un objeto común que uses diariamente (como un tenedor, un reloj o un paraguas) y rediseña completamente su forma y función. Crea un prototipo conceptual que resuelva un problema específico o mejore la experiencia de uso de manera innovadora.",
+    "rules": [
+      "El nuevo diseño debe ser radicalmente diferente al original.",
+      "Debe resolver un problema específico o mejorar una función existente.",
+      "Presenta tu idea mediante un boceto detallado o una descripción escrita."
+    ],
+    "extraTip": "Piensa en cómo la tecnología o materiales modernos podrían transformar el objeto. ¿Qué harías si no tuvieras restricciones técnicas o de costos?",
+    "skill": "Creatividad",
+    "level": "Maestro",
+    "type": "daily",
+    "createdAt": "2025-03-14T11:31:06.981Z"
+  },
+  {
+    "id": "8790805c-c2c9-4e37-83b9-c43ef6c86902",
+    "title": "Expresa tu opinión en una conversación",
+    "description": "Hoy, elige una conversación en la que normalmente no expresarías tu opinión y hazlo de manera clara y respetuosa. El objetivo es practicar la comunicación asertiva, compartiendo tu punto de vista sin ser agresivo ni pasivo. Esto te ayudará a ganar confianza en tu capacidad para expresarte y a fortalecer tus relaciones interpersonales.",
+    "rules": [
+      "Elige una situación cotidiana (en el trabajo, con amigos o familiares).",
+      "Expresa tu opinión usando frases como 'Creo que...' o 'Me gustaría...'.",
+      "Mantén un tono de voz calmado y un lenguaje corporal abierto."
+    ],
+    "extraTip": "Si te sientes inseguro, practica previamente lo que dirás frente a un espejo o anótalo para sentirte más preparado.",
+    "skill": "Asertividad",
+    "level": "Aprendiz",
+    "type": "daily",
+    "createdAt": "2025-03-14T11:26:43.566Z"
+  },
+  {
+    "id": "c6a7efea-6c2f-4eab-bec1-03e5b99e140e",
+    "title": "Expresa tu opinión en una conversación",
+    "description": "Hoy, durante una conversación con amigos, familiares o compañeros de trabajo, expresa tu opinión sobre un tema de manera clara y respetuosa. Asegúrate de usar un tono de voz adecuado y mantener contacto visual. Este ejercicio te ayudará a practicar la comunicación asertiva y a ganar confianza en la expresión de tus pensamientos.",
+    "rules": [
+      "Elige un tema sobre el que tengas una opinión clara.",
+      "Expresa tu punto de vista usando frases como 'En mi opinión...' o 'Creo que...'.",
+      "Escucha activamente las respuestas de los demás sin interrumpir."
+    ],
+    "extraTip": "Si te sientes inseguro, practica lo que vas a decir frente a un espejo antes de la conversación.",
+    "skill": "Asertividad",
+    "level": "Aprendiz",
+    "type": "daily",
+    "createdAt": "2025-03-14T11:26:10.244Z"
+  },
+  {
+    "id": "3d9ab51a-6704-4612-bbd8-bade7ddc42d5",
+    "title": "Planificación inversa de tu día",
+    "description": "Comienza tu día definiendo el resultado final que deseas lograr y trabaja hacia atrás para crear un plan detallado. Este enfoque te ayudará a mantener el enfoque en lo esencial y evitar distracciones.",
+    "rules": [
+      "Define 1-3 resultados clave que deseas lograr al final del día",
+      "Divide cada resultado en tareas específicas y asigna tiempos realistas",
+      "Ordena las tareas en orden inverso, desde el resultado final hasta el primer paso",
+      "Revisa y ajusta tu plan cada 2 horas"
+    ],
+    "extraTip": "Usa un temporizador para cada tarea y registra las desviaciones para mejorar tu precisión en futuras planificaciones.",
+    "skill": "Gestión del tiempo",
+    "level": "Maestro",
+    "type": "daily",
+    "createdAt": "2025-03-14T09:32:21.593Z"
+  },
+  {
+    "id": "3351bc05-5f6f-4db1-ad1d-98456a51c9f9",
+    "title": "Expresa una opinión diferente",
+    "description": "Hoy, en una conversación cotidiana (con un compañero de trabajo, amigo o familiar), expresa una opinión o preferencia que sea diferente a la de los demás. Hazlo de manera clara y respetuosa, sin sentirte obligado a justificarte en exceso. Este ejercicio te ayudará a practicar la asertividad al defender tu punto de vista sin caer en la agresividad o la pasividad.",
+    "rules": [
+      "Elige una situación en la que normalmente te quedarías callado o seguirías la opinión de los demás.",
+      "Expresa tu opinión de manera directa pero amable, usando frases como 'Yo pienso que...' o 'En mi experiencia...'.",
+      "No te disculpes por tener una opinión diferente, simplemente compártela con confianza."
+    ],
+    "extraTip": "Si te sientes incómodo, recuerda que está bien tener puntos de vista distintos. Practica la escucha activa después de expresar tu opinión para mantener un diálogo respetuoso.",
+    "skill": "Asertividad",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-14T09:27:27.476Z"
+  },
+  {
+    "id": "63f01994-f973-4873-ae35-dee152fa1c28",
+    "title": "Expresa tu opinión en una conversación",
+    "description": "Hoy, durante una conversación cotidiana (con un amigo, familiar o compañero de trabajo), expresa tu opinión sobre un tema de manera clara y respetuosa. Elige un momento en el que normalmente te quedarías callado o simplemente asentirías, y en su lugar, comparte tu punto de vista de forma asertiva. Esto te ayudará a practicar la comunicación directa y a ganar confianza en tu capacidad para expresarte.",
+    "rules": [
+      "Elige un tema que te interese pero que no sea demasiado conflictivo",
+      "Usa un tono de voz calmado y seguro",
+      "Mantén el contacto visual y una postura abierta"
+    ],
+    "extraTip": "Si te sientes inseguro, practica previamente lo que vas a decir frente a un espejo o con alguien de confianza. Esto te ayudará a sentirte más preparado.",
+    "skill": "Asertividad",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-14T09:27:14.598Z"
+  },
+  {
+    "id": "1150674f-2674-4925-925f-9635e0311934",
+    "title": "Expresa tu opinión en una conversación",
+    "description": "Hoy, en una conversación cotidiana (con un amigo, familiar o compañero de trabajo), expresa tu opinión sobre un tema de manera clara y respetuosa. El objetivo es practicar cómo comunicar tus pensamientos sin ser agresivo ni pasivo, manteniendo un tono amable pero firme.",
+    "rules": [
+      "Elige un tema en el que tengas una opinión clara",
+      "Expresa tu punto de vista usando frases como 'En mi opinión...' o 'Creo que...'",
+      "Escucha activamente la respuesta de la otra persona sin interrumpir"
+    ],
+    "extraTip": "Si te sientes inseguro, practica antes de la conversación frente a un espejo o con alguien de confianza para ganar confianza.",
+    "skill": "Asertividad",
+    "level": "Aprendiz",
+    "type": "daily",
+    "createdAt": "2025-03-14T09:05:53.168Z"
+  },
+  {
+    "id": "2477711a-b9da-4822-9381-636beb38f2de",
+    "title": "Expresa tu opinión en una conversación",
+    "description": "Hoy, elige una conversación cotidiana (con un amigo, familiar o compañero de trabajo) y expresa tu opinión sobre un tema de manera clara y respetuosa. El objetivo es practicar cómo comunicar tus pensamientos sin ser agresivo ni pasivo, manteniendo un tono amable pero firme.",
+    "rules": [
+      "Elige un tema que te interese pero que no sea demasiado conflictivo.",
+      "Usa frases como 'En mi opinión...' o 'Creo que...' para expresar tu punto de vista.",
+      "Escucha activamente la respuesta de la otra persona sin interrumpir."
+    ],
+    "extraTip": "Si te sientes inseguro, practica previamente lo que vas a decir frente a un espejo o anótalo para ganar confianza.",
+    "skill": "Asertividad",
+    "level": "Aprendiz",
+    "type": "daily",
+    "createdAt": "2025-03-14T09:05:49.420Z"
+  },
+  {
+    "id": "e9bebe00-986e-4ca0-94e7-ee7f6a3d14d2",
+    "title": "Escucha con atención plena",
+    "description": "Hoy, dedica al menos 5 minutos de conversación con una persona para practicar la escucha activa. Concéntrate completamente en lo que dice, sin interrumpir ni pensar en tu respuesta mientras habla. Esto te ayudará a comprender mejor sus emociones y perspectivas.",
+    "rules": [
+      "Elige una conversación significativa para practicar",
+      "Mantén contacto visual y asiente para mostrar que estás escuchando",
+      "Evita interrumpir o dar consejos a menos que te lo pidan"
+    ],
+    "extraTip": "Después de la conversación, reflexiona sobre lo que aprendiste de la otra persona y cómo te hizo sentir su perspectiva.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-14T08:12:26.828Z"
+  },
+  {
+    "id": "445e7821-83cd-4b2f-b546-1aa8757304d0",
+    "title": "Escucha con atención plena",
+    "description": "Hoy, dedica al menos 5 minutos de conversación con cada persona a escuchar activamente, sin interrumpir ni pensar en tu respuesta. Concéntrate en entender sus emociones y perspectivas.",
+    "rules": [
+      "Mantén contacto visual y asiente para mostrar que estás prestando atención.",
+      "No interrumpas ni des consejos a menos que te los pidan.",
+      "Refleja lo que escuchas repitiendo o parafraseando lo que la otra persona ha dicho."
+    ],
+    "extraTip": "Intenta notar no solo las palabras, sino también el tono de voz y el lenguaje corporal para captar emociones más sutiles.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-14T08:12:21.500Z"
+  },
+  {
+    "id": "24a54231-2fda-42b4-bf00-f4a7ca2b7d63",
+    "title": "Escucha con atención plena",
+    "description": "Hoy, dedica al menos 5 minutos de conversación con una persona para practicar la escucha activa. Presta atención no solo a sus palabras, sino también a su tono de voz, lenguaje corporal y emociones subyacentes. Esto te ayudará a comprender mejor sus sentimientos y perspectivas.",
+    "rules": [
+      "Elige una conversación significativa con alguien cercano",
+      "Mantén contacto visual y asiente para mostrar que estás escuchando",
+      "Evita interrumpir y ofrece respuestas que demuestren comprensión"
+    ],
+    "extraTip": "Después de la conversación, reflexiona sobre lo que aprendiste de la otra persona y cómo te hizo sentir su perspectiva.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-14T08:08:19.184Z"
+  },
+  {
+    "id": "ea542665-c931-4c3f-a304-8c6262565bf9",
+    "title": "Escucha con atención plena",
+    "description": "Hoy, dedica al menos 5 minutos de conversación con una persona para practicar la escucha activa. Presta atención no solo a sus palabras, sino también a su tono de voz, expresiones faciales y lenguaje corporal. Esto te ayudará a comprender mejor sus emociones y perspectivas.",
+    "rules": [
+      "Elige una conversación significativa con alguien cercano",
+      "Mantén contacto visual y asiente para mostrar que estás escuchando",
+      "Evita interrumpir y haz preguntas abiertas para profundizar en la conversación"
+    ],
+    "extraTip": "Antes de responder, toma un momento para reflexionar sobre lo que la otra persona ha dicho. Esto te ayudará a responder de manera más empática y considerada.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-14T08:08:14.346Z"
+  },
+  {
+    "id": "4fe3091f-0877-4384-9572-f21584205b5c",
+    "title": "Escucha con atención plena",
+    "description": "Hoy, dedica al menos 5 minutos completos a escuchar activamente a una persona sin interrumpir, juzgar o pensar en tu respuesta. Concéntrate en entender sus emociones y perspectiva.",
+    "rules": [
+      "Elige una conversación significativa",
+      "Mantén contacto visual y lenguaje corporal abierto",
+      "Refleja lo que escuchas con frases como 'Entiendo que te sientes...'"
+    ],
+    "extraTip": "Si te distraes, reconoce la distracción y vuelve a enfocarte en la persona que está hablando.",
+    "skill": "Empatía",
+    "level": "Aprendiz",
+    "type": "daily",
+    "createdAt": "2025-03-13T09:34:33.470Z"
+  },
+  {
+    "id": "2b357e29-18a6-4926-88a2-ff5dce285907",
+    "title": "Cambia tu ruta habitual",
+    "description": "Hoy, elige una ruta diferente para ir al trabajo, a la escuela o a un lugar que visites regularmente. Este pequeño cambio te ayudará a salir de la rutina y a adaptarte a nuevas perspectivas y experiencias.",
+    "rules": [
+      "Planifica una ruta alternativa con anticipación.",
+      "Observa y toma nota de al menos tres cosas nuevas que no habías notado antes.",
+      "Reflexiona sobre cómo te sentiste al cambiar tu rutina."
+    ],
+    "extraTip": "Si es posible, utiliza un medio de transporte diferente al habitual para ampliar aún más tu experiencia.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-13T09:33:29.771Z"
+  },
+  {
+    "id": "a988df26-5407-4010-9fab-b3d4b7feef90",
+    "title": "Cambia tu ruta habitual",
+    "description": "Hoy, elige un camino diferente para ir al trabajo, a la escuela o a cualquier lugar que visites regularmente. Este pequeño cambio te ayudará a salir de la rutina y a adaptarte a nuevas perspectivas y entornos.",
+    "rules": [
+      "Planifica una ruta alternativa la noche anterior o por la mañana.",
+      "No uses GPS a menos que sea absolutamente necesario.",
+      "Observa y toma nota de al menos tres cosas nuevas que no habías notado antes."
+    ],
+    "extraTip": "Intenta interactuar con alguien nuevo en tu ruta, como un vecino o un vendedor, para ampliar tu experiencia.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-13T09:31:30.800Z"
+  },
+  {
+    "id": "e0b41e48-2916-4e59-a013-522d4e369e86",
+    "title": "Cambia tu ruta habitual",
+    "description": "Hoy, elige una ruta diferente para ir al trabajo, a la escuela o a cualquier lugar que visites regularmente. Este pequeño cambio te ayudará a salir de la rutina y a adaptarte a nuevas perspectivas y entornos.",
+    "rules": [
+      "Planifica una ruta alternativa con anticipación.",
+      "Observa y toma nota de cualquier cosa nueva o interesante que veas.",
+      "Reflexiona sobre cómo te sentiste al cambiar tu rutina habitual."
+    ],
+    "extraTip": "Si es posible, intenta caminar o usar un medio de transporte diferente al habitual para maximizar la experiencia de adaptación.",
+    "skill": "Adaptabilidad",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-13T09:31:27.828Z"
+  },
+  {
+    "id": "e7d89aad-4a17-4673-8478-d67767da1ed4",
+    "title": "Reconoce el esfuerzo de un compañero",
+    "description": "Identifica a un compañero de trabajo que haya hecho un esfuerzo notable y reconócelo públicamente. Esto fomenta un ambiente positivo y refuerza la importancia de valorar las contribuciones de cada miembro del equipo.",
+    "rules": [
+      "Elige a un compañero que haya destacado recientemente",
+      "Expresa tu reconocimiento de manera específica y sincera",
+      "Hazlo en un espacio público o en un canal de comunicación del equipo"
+    ],
+    "extraTip": "Acompaña tu reconocimiento con un ejemplo concreto de lo que hizo bien para que sea más significativo.",
+    "skill": "Trabajo en equipo",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-13T09:25:43.197Z"
+  },
+  {
+    "id": "6c15ae03-b4b1-4232-9438-adfe35dcff6a",
+    "title": "Escucha activa en reuniones",
+    "description": "Practica la escucha activa durante una reunión de equipo, mostrando interés genuino por las ideas de los demás y resumiendo puntos clave para demostrar comprensión.",
+    "rules": [
+      "Mantén contacto visual y asiente cuando otros hablen",
+      "Toma notas breves de los puntos principales",
+      "Resume al menos una idea de otro compañero para confirmar comprensión"
+    ],
+    "extraTip": "Intenta hacer preguntas abiertas para profundizar en las ideas de tus compañeros y mostrar interés genuino.",
+    "skill": "Trabajo en equipo",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-13T09:25:40.843Z"
+  },
+  {
+    "id": "4be62161-56b3-49d3-ae7a-1269ceae36c7",
+    "title": "Escucha profunda con perspectiva",
+    "description": "Hoy, selecciona a una persona con quien tengas una relación compleja o desafiante. Dedica al menos 15 minutos a una conversación donde te enfoques únicamente en entender su perspectiva sin juzgar o interrumpir. El objetivo es comprender profundamente sus emociones y razones detrás de sus acciones o opiniones.",
+    "rules": [
+      "No interrumpas mientras la otra persona habla.",
+      "Haz preguntas abiertas para profundizar en su perspectiva.",
+      "Refleja lo que escuchas para confirmar tu comprensión."
+    ],
+    "extraTip": "Antes de la conversación, toma un momento para respirar profundamente y dejar de lado tus prejuicios. Esto te ayudará a estar más presente y receptivo.",
+    "skill": "Empatía",
+    "level": "Maestro",
+    "type": "daily",
+    "createdAt": "2025-03-12T11:25:23.476Z"
+  },
+  {
+    "id": "5462718e-bd7d-40c8-8f56-5f920dc0431c",
+    "title": "Escucha profunda con reflexión emocional",
+    "description": "Hoy, selecciona una conversación importante y practica la escucha profunda. No solo escuches las palabras, sino también las emociones detrás de ellas. Después de la conversación, reflexiona sobre lo que sentiste y cómo crees que se sintió la otra persona.",
+    "rules": [
+      "Elige una conversación significativa con alguien cercano.",
+      "Enfócate en escuchar sin interrumpir, mostrando interés genuino.",
+      "Después de la conversación, escribe tus reflexiones sobre las emociones percibidas."
+    ],
+    "extraTip": "Intenta hacer preguntas abiertas que fomenten que la otra persona comparta más sobre sus sentimientos y pensamientos.",
+    "skill": "Empatía",
+    "level": "Maestro",
+    "type": "daily",
+    "createdAt": "2025-03-12T11:25:23.143Z"
+  },
+  {
+    "id": "b40a4e26-93ef-46f2-8e6c-459cc85da5cb",
+    "title": "Escucha Profunda con un Desconocido",
+    "description": "Hoy, busca una oportunidad para entablar una conversación significativa con alguien que no conoces bien (un compañero de trabajo, un vecino, o alguien en un café). Practica la escucha profunda, enfocándote completamente en entender su perspectiva sin juzgar.",
+    "rules": [
+      "Inicia la conversación con una pregunta abierta sobre sus intereses o experiencias.",
+      "Mantén contacto visual y muestra interés genuino.",
+      "Refleja lo que escuchas para asegurarte de entender correctamente."
+    ],
+    "extraTip": "Intenta notar no solo las palabras, sino también el tono de voz y el lenguaje corporal para captar emociones subyacentes.",
+    "skill": "Empatía",
+    "level": "Maestro",
+    "type": "daily",
+    "createdAt": "2025-03-12T09:12:59.421Z"
+  },
+  {
+    "id": "c05d1ab7-d23b-4433-9cbc-7c8be0949322",
+    "title": "Escucha sin juicio",
+    "description": "Hoy, dedica al menos 15 minutos a escuchar a alguien sin interrumpir, juzgar o dar consejos. Concéntrate en entender sus emociones y perspectivas, reflejando lo que escuchas para validar sus sentimientos.",
+    "rules": [
+      "Elige una conversación significativa con alguien cercano",
+      "Mantén contacto visual y muestra interés genuino",
+      "Resiste la tentación de ofrecer soluciones o consejos"
+    ],
+    "extraTip": "Usa frases como 'Entiendo que te sientas...' o 'Parece que esto es importante para ti porque...' para demostrar que estás realmente escuchando y comprendiendo.",
+    "skill": "Empatía",
+    "level": "Maestro",
+    "type": "daily",
+    "createdAt": "2025-03-12T09:12:53.934Z"
+  },
+  {
+    "id": "88973efb-1e25-4d8a-a160-71a635a2ce3c",
+    "title": "Escucha con los ojos cerrados",
+    "description": "Hoy, en al menos una conversación, cierra los ojos mientras la otra persona habla. Concéntrate únicamente en su tono de voz, ritmo y emociones. Esto te ayudará a desarrollar una mayor sensibilidad hacia los estados emocionales de los demás, sin distracciones visuales.",
+    "rules": [
+      "Elige una conversación significativa para este ejercicio",
+      "Cierra los ojos durante al menos 1 minuto mientras escuchas",
+      "Reflexiona sobre qué emociones detectaste al final de la conversación"
+    ],
+    "extraTip": "Si te sientes incómodo cerrando los ojos, puedes mirar hacia abajo o fijar la vista en un punto neutro para minimizar distracciones visuales.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-12T08:52:54.890Z"
+  },
+  {
+    "id": "2b90efd0-5f8c-41fc-886b-ec17391a4d9c",
+    "title": "Escucha con los cinco sentidos",
+    "description": "Hoy, durante al menos tres conversaciones, concéntrate completamente en la persona que habla. Observa no solo sus palabras, sino también su tono de voz, expresiones faciales y lenguaje corporal. El objetivo es comprender no solo lo que dicen, sino cómo se sienten al decirlo.",
+    "rules": [
+      "Elige tres interacciones diferentes (pueden ser breves)",
+      "Mantén contacto visual y evita distracciones",
+      "Resume lo que entendiste de su estado emocional antes de responder"
+    ],
+    "extraTip": "Antes de dar tu opinión, prueba decir 'Entiendo que te sientes... ¿es correcto?' para validar sus emociones.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-12T08:52:54.486Z"
+  },
+  {
+    "id": "44e02604-6290-4397-adeb-433be437308b",
+    "title": "Crea un cuento con 5 objetos aleatorios",
+    "description": "Selecciona 5 objetos de tu entorno (pueden ser cualquier cosa, desde un lápiz hasta un zapato) y escribe un cuento corto donde todos estos objetos sean elementos clave de la historia. Este ejercicio estimula la imaginación y la capacidad de conectar ideas aparentemente no relacionadas.",
+    "rules": [
+      "Elige 5 objetos al azar de tu entorno",
+      "Escribe un cuento de al menos 200 palabras",
+      "Todos los objetos deben tener un papel importante en la historia"
+    ],
+    "extraTip": "Intenta darle a los objetos características humanas o mágicas para hacer la historia más interesante.",
+    "skill": "Creatividad",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-12T08:21:54.096Z"
+  },
+  {
+    "id": "1579162b-86f5-44f6-a608-5dda66e7dbf1",
+    "title": "Historias en 1 minuto",
+    "description": "Crea 3 historias cortas en 1 minuto cada una. Usa un temporizador para limitar el tiempo y estimular tu pensamiento rápido y creativo. Este ejercicio ayuda a desarrollar la capacidad de generar ideas bajo presión y a pensar de manera más espontánea.",
+    "rules": [
+      "Elige un tema aleatorio para cada historia (puedes usar un generador de palabras aleatorias o simplemente pensar en algo rápido)",
+      "Escribe o graba en voz alta la historia en exactamente 1 minuto",
+      "No te detengas a corregir o pensar demasiado, deja fluir las ideas"
+    ],
+    "extraTip": "Intenta usar temas inusuales o combinaciones extrañas para desafiar aún más tu creatividad. Por ejemplo, 'un astronauta que odia el espacio' o 'un árbol que quiere ser bailarín'.",
+    "skill": "Creatividad",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-12T08:21:52.251Z"
+  },
+  {
+    "id": "b102f4c9-2ae0-4662-be2e-6cd34005de28",
+    "title": "Escucha sin interrumpir",
+    "description": "Hoy, practica la escucha activa con al menos tres personas diferentes. Presta atención completa a lo que dicen, sin interrumpir ni preparar tu respuesta mientras hablan. Esto te ayudará a comprender mejor sus perspectivas y emociones.",
+    "rules": [
+      "Elige tres personas con las que interactúes hoy",
+      "Escucha atentamente sin interrumpir",
+      "Refleja lo que escuchas con frases como 'Entiendo que te sientes...' o 'Parece que esto es importante para ti...'"
+    ],
+    "extraTip": "Mantén contacto visual y asiente con la cabeza para mostrar que estás prestando atención. Esto hará que la otra persona se sienta más valorada y comprendida.",
+    "skill": "Empatía",
+    "level": "Explorador",
+    "type": "daily",
+    "createdAt": "2025-03-11T11:20:01.512Z"
+  },
+  {
     "id": "10cf1cbd-a159-42a4-90fd-38aa16495da9",
     "title": "Escucha con los ojos cerrados",
     "description": "Hoy, en al menos dos conversaciones, cierra los ojos mientras la otra persona habla. Concéntrate únicamente en su tono de voz, ritmo y emociones. Esto te ayudará a desarrollar una mayor sensibilidad hacia los estados emocionales de los demás, sin distracciones visuales.",

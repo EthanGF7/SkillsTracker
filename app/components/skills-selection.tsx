@@ -6,10 +6,32 @@ import { Input } from "@/components/ui/input"
 import { Plus } from "lucide-react"
 import Header from "./header"
 import SkillAssessment from "./skill-assessment"
+import CustomSkillForm from "./custom-skill-form"
 
 interface Skill {
   id: string
   name: string
+}
+
+interface SkillDescription {
+  description: string
+  keyPoints: string[]
+  examples: string[]
+}
+
+interface Challenge {
+  title: string
+  description: string
+  objectives: string[]
+  metrics: string[]
+  type: 'daily' | 'weekly'
+  weeklyChallenge?: {
+    title: string
+    description: string
+    objectives: string[]
+    metrics: string[]
+    type: 'weekly'
+  }
 }
 
 const defaultSkills: Skill[] = [
@@ -26,35 +48,73 @@ const defaultSkills: Skill[] = [
 
 export default function SkillsSelection() {
   const [selectedSkills, setSelectedSkills] = useState<Set<string>>(new Set())
-  const [newSkill, setNewSkill] = useState("")
+  const [showCustomSkillForm, setShowCustomSkillForm] = useState(false)
   const [showAssessment, setShowAssessment] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [currentSkillDescription, setCurrentSkillDescription] = useState<SkillDescription | null>(null)
+  const [currentSkillName, setCurrentSkillName] = useState<string>("")
+  const [currentStep, setCurrentStep] = useState(1)
 
-  const toggleSkill = (skillId: string) => {
-    const newSelected = new Set(selectedSkills)
+  const fetchSkillDescription = async (skillName: string) => {
+    try {
+      const response = await fetch('/api/generate-skill-description', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ skillName })
+      });
+
+      if (!response.ok) {
+        throw new Error('Error al generar la descripción');
+      }
+
+      const data = await response.json();
+      setCurrentSkillDescription(data);
+      setCurrentSkillName(skillName);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
+  const toggleSkill = async (skillId: string) => {
+    const newSelected = new Set(selectedSkills);
+    const skill = defaultSkills.find(s => s.id === skillId);
+    
     if (newSelected.has(skillId)) {
-      newSelected.delete(skillId)
+      newSelected.delete(skillId);
+      if (skill && skill.name === currentSkillName) {
+        setCurrentSkillDescription(null);
+        setCurrentSkillName("");
+      }
     } else {
-      newSelected.add(skillId)
+      newSelected.add(skillId);
+      if (skill) {
+        await fetchSkillDescription(skill.name);
+      }
     }
-    setSelectedSkills(newSelected)
-  }
+    setSelectedSkills(newSelected);
+  };
 
-  const handleAddSkill = () => {
-    if (newSkill.trim()) {
-      const skillId = `custom-${Date.now()}`
-      defaultSkills.push({ id: skillId, name: newSkill.trim() })
-      setNewSkill("")
-      toggleSkill(skillId)
+  const handleAddCustomSkill = async (skillName: string) => {
+    try {
+      setIsLoading(true);
+      const skillId = `custom-${Date.now()}`;
+      defaultSkills.push({ id: skillId, name: skillName.trim() });
+      await toggleSkill(skillId);
+      setShowCustomSkillForm(false);
+    } catch (error) {
+      console.error('Error:', error);
+    } finally {
+      setIsLoading(false);
     }
-  }
+  };
 
   const handleStartAssessment = () => {
-    setShowAssessment(true)
+    setCurrentStep(2);
+    setShowAssessment(true);
   }
 
   const handleAssessmentComplete = (assessments: Record<string, string>) => {
     console.log("Skill assessments:", assessments)
-    // Handle the completion of the assessment
   }
 
   if (showAssessment) {
@@ -66,7 +126,10 @@ export default function SkillsSelection() {
       <SkillAssessment
         selectedSkills={selectedSkillNames}
         onComplete={handleAssessmentComplete}
-        onBack={() => setShowAssessment(false)}
+        onBack={() => {
+          setShowAssessment(false);
+          setCurrentStep(1);
+        }}
       />
     )
   }
@@ -76,15 +139,40 @@ export default function SkillsSelection() {
       <Header />
 
       <div className="container mx-auto px-6 pt-24 pb-8">
-        <div className="max-w-[600px] mx-auto">
+        <div className="max-w-[800px] mx-auto">
           <h1 className="text-2xl font-semibold text-center text-indigo-600 mb-16">
             Bienvenido a tu Viaje de Desarrollo Personal
           </h1>
+
+          <div className="flex items-center justify-center mb-10">
+            <div className="flex items-center">
+              <div className={`w-8 h-8 rounded-full flex items-center justify-center ${currentStep === 1 ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-600'}`}>
+                1
+              </div>
+              <div className="text-sm font-medium ml-2">{currentSkillName || "Asertividad"}</div>
+            </div>
+            <div className="w-16 h-[2px] mx-4 bg-gray-200"></div>
+            <div className="flex items-center">
+              <div className={`w-8 h-8 rounded-full flex items-center justify-center ${currentStep === 2 ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-600'}`}>
+                2
+              </div>
+              <div className="text-sm font-medium ml-2">Creatividad</div>
+            </div>
+          </div>
 
           <div className="bg-white rounded-3xl p-8 shadow-sm">
             <h2 className="text-xl font-medium text-center text-[#1e1b4b] mb-10">
               ¿Qué habilidades te gustaría mejorar?
             </h2>
+
+            {currentSkillDescription && (
+              <div className="text-center mb-10">
+                <h3 className="text-xl font-medium text-indigo-600 mb-4">{currentSkillName}</h3>
+                <p className="text-gray-600 max-w-[600px] mx-auto leading-relaxed">
+                  {currentSkillDescription.description}
+                </p>
+              </div>
+            )}
 
             <div className="grid grid-cols-3 gap-4 mb-8 max-w-[500px] mx-auto">
               {defaultSkills.map((skill) => (
@@ -107,32 +195,29 @@ export default function SkillsSelection() {
 
             <div className="space-y-3">
               <p className="text-sm text-gray-600 text-center">Si es necesario, añade una Soft Skill:</p>
-              <div className="flex space-x-2">
-                <Input
-                  value={newSkill}
-                  onChange={(e) => setNewSkill(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter") {
-                      e.preventDefault()
-                      handleAddSkill()
-                    }
-                  }}
-                  placeholder="Escribe una nueva Soft Skill"
-                  className="bg-white border-gray-300 rounded-lg text-center flex-grow"
+              {showCustomSkillForm ? (
+                <CustomSkillForm
+                  onSkillCreated={handleAddCustomSkill}
+                  onCancel={() => setShowCustomSkillForm(false)}
                 />
-                <Button onClick={handleAddSkill} className="rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white">
-                  <Plus className="w-4 h-4" />
-                  <span className="sr-only">Añadir Skill</span>
+              ) : (
+                <Button 
+                  onClick={() => setShowCustomSkillForm(true)}
+                  className="w-full bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 rounded-lg h-12"
+                  disabled={isLoading}
+                >
+                  <Plus className="w-4 h-4 mr-2" />
+                  Añadir Nueva Habilidad
                 </Button>
-              </div>
+              )}
             </div>
 
             <Button
               onClick={handleStartAssessment}
               className="w-full mt-8 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg h-12"
-              disabled={selectedSkills.size === 0}
+              disabled={selectedSkills.size === 0 || isLoading}
             >
-              Empezar
+              {isLoading ? "Cargando..." : "Empezar"}
             </Button>
           </div>
         </div>
@@ -140,4 +225,3 @@ export default function SkillsSelection() {
     </div>
   )
 }
-

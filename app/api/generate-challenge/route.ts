@@ -2,7 +2,10 @@ import { NextResponse } from 'next/server'
 import { v4 as uuidv4 } from 'uuid'
 import { DEEPSEEK_API_KEY, DEEPSEEK_API_URL } from '@/app/config/api'
 import { saveChallengeToHistory, loadChallengeHistory, isSimilarToExisting } from '@/app/utils/challenge-history'
-import type { Challenge, Skill } from '@/app/types/challenge'
+import type { Challenge, Skill, Level } from '@/app/types/challenge'
+import { promises as fs } from 'fs'
+import path from 'path'
+import type { CustomSkill } from '@/app/types/custom-skill'
 
 type ChallengeType = 'daily' | 'weekly';
 
@@ -144,9 +147,21 @@ const skillPrompts: Record<Skill, { context: string; examples: { daily: string[]
   }
 }
 
+async function getCustomSkillDescription(skillName: string): Promise<CustomSkill | null> {
+  try {
+    const filePath = path.join(process.cwd(), 'app/data/custom-skills.json')
+    const fileContent = await fs.readFile(filePath, 'utf-8')
+    const data = JSON.parse(fileContent)
+    return data['custom-skills'][skillName] || null
+  } catch (error) {
+    console.error('Error al leer habilidad personalizada:', error)
+    return null
+  }
+}
+
 export async function POST(request: Request) {
   try {
-    const { skill, level, type } = await request.json() as { skill: Skill; level: string; type: ChallengeType }
+    const { skill, level, type } = await request.json() as { skill: string; level: Level; type: ChallengeType }
     
     if (!skill || !level || !type) {
       return NextResponse.json(
@@ -157,27 +172,45 @@ export async function POST(request: Request) {
 
     console.log('Generando reto:', { skill, level, type })
 
-    const skillPrompt = skillPrompts[skill]
-    if (!skillPrompt) {
-      return NextResponse.json(
-        { error: 'Habilidad no válida' },
-        { status: 400 }
-      )
+    // Obtener prompt según el tipo de habilidad
+    let context = '';
+    let examples: string[] = [];
+
+    const skillPrompt = skillPrompts[skill as Skill];
+    if (skillPrompt) {
+      // Es una habilidad predefinida
+      context = skillPrompt.context;
+      examples = skillPrompt.examples[type];
+    } else {
+      // Es una habilidad personalizada
+      const customSkill = await getCustomSkillDescription(skill);
+      if (!customSkill) {
+        return NextResponse.json({ error: 'Habilidad no encontrada' }, { status: 404 });
+      }
+
+      context = `Eres un experto en desarrollo de habilidades personales.
+${customSkill.description}
+
+Puntos clave:
+${customSkill.keyPoints.join('\n')}`;
+      
+      examples = type === 'daily' 
+        ? ['Practica la habilidad en una situación cotidiana', 'Aplica la habilidad en un contexto específico']
+        : ['Desarrolla un proyecto semanal usando esta habilidad', 'Implementa la habilidad en diferentes situaciones'];
     }
 
     const systemMessage = {
       role: 'system',
-      content: `${skillPrompt.context}
+      content: `${context}
 
-IMPORTANTE: 
+IMPORTANTE:
 1. Genera un reto ${type === 'daily' ? 'DIARIO' : 'SEMANAL'} específico para la habilidad "${skill}".
 2. Los retos diarios deben ser concisos y realizables en un día.
 3. Los retos semanales deben ser más elaborados y tener mayor impacto.
-4. NO repitas ejemplos similares a retos anteriores.
-5. Adapta la complejidad al nivel "${level}".
+4. Adapta la complejidad al nivel "${level}".
 
-Ejemplos de buenos retos ${type === 'daily' ? 'DIARIOS' : 'SEMANALES'} para ${skill}:
-${skillPrompt.examples[type as 'daily' | 'weekly'].map((ex: string) => `- ${ex}`).join('\n')}
+Ejemplos de buenos retos ${type}:
+${examples.map(ex => `- ${ex}`).join('\n')}
 
 Responde SOLO con un objeto JSON con esta estructura exacta:
 {
@@ -186,12 +219,12 @@ Responde SOLO con un objeto JSON con esta estructura exacta:
   "rules": ["regla1", "regla2", "regla3"],
   "extraTip": "consejo adicional para mejorar la experiencia"
 }`
-    }
+    };
 
     const userMessage = {
       role: 'user',
-      content: `Genera un reto ${type === 'daily' ? 'DIARIO' : 'SEMANAL'} de nivel "${level}" que se centre específicamente en desarrollar la habilidad de ${skill}. ${type === 'daily' ? 'El reto debe ser conciso y realizable en un día.' : 'El reto debe ser más elaborado y tener un impacto significativo durante la semana.'}`
-    }
+      content: `Genera un reto ${type} para la habilidad "${skill}" con nivel "${level}"`
+    };
 
     console.log('Conectando a:', DEEPSEEK_API_URL)
     
@@ -205,153 +238,61 @@ Responde SOLO con un objeto JSON con esta estructura exacta:
         messages: [systemMessage, userMessage],
         model: 'deepseek-chat',
         temperature: 0.7,
-        max_tokens: 1000,
-        stream: false
+        max_tokens: 1000
       })
     })
 
     if (!response.ok) {
-      console.error('Error de la API:', response.status, response.statusText)
-      const errorText = await response.text()
-      console.error('Respuesta de error completa:', errorText)
+      console.error('Error en la API:', await response.text())
       return NextResponse.json(
-        { 
-          error: 'Error de la API',
-          details: {
-            status: response.status,
-            statusText: response.statusText,
-            error: errorText,
-            requestBody: JSON.stringify({
-              messages: [systemMessage, userMessage],
-              model: 'deepseek-chat',
-              temperature: 0.7,
-              max_tokens: 1000,
-              stream: false
-            })
-          }
-        }, 
-        { 
-          status: response.status,
-          headers: {
-            'Content-Type': 'application/json',
-            'Cache-Control': 'no-store'
-          }
-        }
+        { error: 'Error al generar el reto' },
+        { status: response.status }
       )
     }
 
-    console.log('Response headers:', Object.fromEntries(response.headers.entries()))
     const data = await response.json()
-    console.log('Respuesta completa de la API:', JSON.stringify(data, null, 2))
-    console.log('Choices:', data.choices)
-    console.log('Primer choice:', data.choices?.[0])
-    console.log('Mensaje:', data.choices?.[0]?.message)
-    console.log('Contenido:', data.choices?.[0]?.message?.content)
+    const challenge = JSON.parse(data.choices[0].message.content)
 
-    if (!data.choices?.[0]?.message?.content) {
+    // Validar la estructura de la respuesta
+    if (!challenge.title || !challenge.description || !challenge.rules || !challenge.extraTip) {
       return NextResponse.json(
-        { 
-          error: 'Respuesta inválida de la API',
-          details: {
-            data,
-            headers: Object.fromEntries(response.headers.entries())
-          }
-        }, 
-        { 
-          status: 500,
-          headers: {
-            'Content-Type': 'application/json',
-            'Cache-Control': 'no-store'
-          }
-        }
+        { error: 'Respuesta inválida de la API' },
+        { status: 500 }
       )
     }
 
-    let challenge: any
-    try {
-      const content = data.choices[0].message.content
-
-      // Asegurarse de que es un JSON válido
-      let parsedContent
-      try {
-        parsedContent = JSON.parse(content)
-      } catch (e) {
-        console.error('Error parseando respuesta:', content)
-        throw new Error('La respuesta no es un JSON válido')
-      }
-
-      // Validar estructura
-      if (!parsedContent.title || !parsedContent.description || !Array.isArray(parsedContent.rules)) {
-        throw new Error('La respuesta no tiene la estructura correcta')
-      }
-
-      challenge = parsedContent
-      console.log('Challenge parseado:', challenge)
-    } catch (error) {
-      console.error('Error procesando el contenido del mensaje:', error)
-      return NextResponse.json(
-        { 
-          error: 'Error procesando el contenido del mensaje',
-          details: {
-            error: error instanceof Error ? error.message : 'Error desconocido',
-            content: data.choices[0].message.content
-          }
-        }, 
-        { 
-          status: 500,
-          headers: {
-            'Content-Type': 'application/json',
-            'Cache-Control': 'no-store'
-          }
-        }
-      )
-    }
-
-    // 4. Verificar que el reto sea único
-    const existingChallenges = await loadChallengeHistory(type)
     const newChallenge: Challenge = {
       id: uuidv4(),
-      ...challenge,
-      skill: skill as Skill,
+      title: challenge.title,
+      description: challenge.description,
+      rules: challenge.rules,
+      extraTip: challenge.extraTip,
+      skill,
       level,
       type,
       createdAt: new Date().toISOString()
     }
 
-    const isSimilar = await isSimilarToExisting(newChallenge, existingChallenges)
+    // Verificar si el reto es similar a uno existente
+    const history = await loadChallengeHistory(type)
+    const isSimilar = await isSimilarToExisting(newChallenge, history)
+
     if (isSimilar) {
-      console.log('Reto similar encontrado, generando uno nuevo...')
       return NextResponse.json(
-        { error: 'Reto similar encontrado, intentando de nuevo...' },
-        { status: 409 }
+        { error: 'Reto similar ya existe' },
+        { status: 400 }
       )
     }
 
-    // 5. Guardar el nuevo reto
+    // Guardar el reto en el historial
     await saveChallengeToHistory(newChallenge, type)
 
-    // 6. Devolver el reto generado
-    return NextResponse.json(newChallenge, {
-      headers: {
-        'Content-Type': 'application/json',
-        'Cache-Control': 'no-store'
-      }
-    })
-
+    return NextResponse.json(newChallenge)
   } catch (error) {
-    console.error('Error completo:', error)
+    console.error('Error:', error)
     return NextResponse.json(
-      { 
-        error: 'Error inesperado',
-        details: error instanceof Error ? error.message : 'Error desconocido'
-      }, 
-      { 
-        status: 500,
-        headers: {
-          'Content-Type': 'application/json',
-          'Cache-Control': 'no-store'
-        }
-      }
+      { error: 'Error interno del servidor' },
+      { status: 500 }
     )
   }
 }

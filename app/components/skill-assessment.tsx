@@ -14,6 +14,7 @@ interface SkillAssessmentProps {
 
 // Definiciones de las habilidades
 const SKILL_DEFINITIONS: Record<string, string> = {
+  Asertividad: "La asertividad es una habilidad fundamental que permite expresar pensamientos, sentimientos y necesidades de manera clara, directa y respetuosa, manteniendo un equilibrio entre los derechos propios y los de los demás. Esta competencia es esencial para establecer relaciones interpersonales saludables y alcanzar objetivos personales y profesionales.",
   Liderazgo:
     "El liderazgo es la capacidad de inspirar, guiar y motivar a un grupo hacia un objetivo común con empatía y responsabilidad.",
   Organización:
@@ -107,128 +108,64 @@ export default function SkillAssessment({ selectedSkills, onComplete, onBack }: 
   const selectedLevel = assessments[currentSkill]
   const isLastSkill = currentSkillIndex === selectedSkills.length - 1
 
-  // Calculate dynamic styles based on number of skills
-  const isLargeSet = selectedSkills.length > 6
-  const containerMaxWidth = isLargeSet ? "100%" : `${Math.min(selectedSkills.length * 150, 600)}px`
-  const circleSize = isLargeSet ? "w-8 h-8" : "w-12 h-12"
-  const fontSize = isLargeSet ? "text-base" : "text-lg"
-  const labelSize = isLargeSet ? "text-xs" : "text-sm"
-  const labelMaxWidth = isLargeSet ? "max-w-[80px]" : "max-w-[120px]"
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#F8FAFF] to-[#F0F4FF]">
       <Header />
 
       <div className="container mx-auto px-6 pt-24 pb-8">
-        <div className="max-w-[1000px] mx-auto">
-          <div className="bg-white rounded-2xl shadow-sm p-8">
-            {/* Progress Steps */}
-            <div className="mb-16">
-              <div
-                className="relative mx-auto"
-                style={{
-                  maxWidth: containerMaxWidth,
-                  height: isLargeSet ? "120px" : "100px",
-                }}
-              >
-                {/* Progress bar container */}
-                <div className="relative flex justify-between items-center">
-                  {/* Lines container */}
-                  <div className="absolute top-4" style={{ left: "12px", right: "12px" }}>
-                    {/* Background line */}
-                    <div className="absolute h-1 bg-gray-200 w-full" />
-
-                    {/* Active line */}
-                    <div
-                      className="absolute h-1 bg-indigo-600 transition-all duration-300"
-                      style={{
-                        width:
-                          currentSkillIndex === selectedSkills.length - 1
-                            ? "100%"
-                            : `${(currentSkillIndex / (selectedSkills.length - 1)) * 100}%`,
-                      }}
-                    />
-                  </div>
-
-                  {/* Circles and Labels */}
-                  {selectedSkills.map((skill, index) => (
-                    <div
-                      key={skill}
-                      className="relative"
-                      style={{
-                        flex: 1,
-                        minWidth: isLargeSet ? "60px" : "100px",
-                      }}
-                    >
-                      {/* Circle */}
-                      <div
-                        className={`relative z-10 rounded-full 
-                          flex items-center justify-center font-medium mx-auto
-                          ${circleSize} ${fontSize}
-                          ${index <= currentSkillIndex ? "bg-indigo-600 text-white" : "bg-gray-200 text-gray-400"}`}
-                      >
-                        {index + 1}
-                      </div>
-                      {/* Label */}
-                      <div className="absolute top-16 left-1/2 -translate-x-1/2 w-full text-center">
-                        <span
-                          className={`${labelSize} ${labelMaxWidth} inline-block
-                            ${index <= currentSkillIndex ? "text-indigo-600 font-medium" : "text-gray-400"}`}
-                        >
-                          {skill}
-                        </span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+        <div className="max-w-[800px] mx-auto">
+          <div className="bg-white rounded-xl shadow-sm p-8">
+            {/* Progress indicator */}
+            <div className="flex items-center justify-center mb-10">
+              <div className="w-8 h-8 rounded-full bg-indigo-600 text-white flex items-center justify-center">
+                1
               </div>
+              <span className="ml-2 text-indigo-600">{currentSkill}</span>
             </div>
 
-            {/* Skill Content */}
-            <div className="max-w-[900px] mx-auto">
-              <h2 className="text-2xl font-medium text-center text-indigo-600 mb-4">{currentSkill}</h2>
-              <p className="text-center text-indigo-600/90 mb-12 max-w-[800px] mx-auto text-lg leading-relaxed">
-                {SKILL_DEFINITIONS[currentSkill]}
-              </p>
+            {/* Skill title */}
+            <h2 className="text-2xl font-medium text-indigo-600 text-center mb-6">{currentSkill}</h2>
 
-              <div className="flex justify-center gap-6 mb-12">
-                {SKILL_LEVELS.map((level) => (
-                  <Card
-                    key={level.id}
-                    className={`w-[220px] p-6 cursor-pointer transition-all border
-                      ${
-                        selectedLevel === level.id
-                          ? "border-indigo-600 shadow-md bg-indigo-50"
-                          : "border-gray-200 hover:border-indigo-600"
-                      }
-                    `}
-                    onClick={() => handleSelectLevel(level.id)}
-                  >
-                    <div className="flex flex-col items-center text-center">
-                      <div
-                        className={`w-20 h-20 rounded-full ${level.bgColor} flex items-center justify-center mb-6 text-4xl`}
-                      >
-                        {level.emoji}
-                      </div>
-                      <h3 className="font-bold text-lg mb-3 text-indigo-600">{level.title}</h3>
-                      <p className="text-sm text-black leading-relaxed">{level.description}</p>
-                    </div>
-                  </Card>
-                ))}
-              </div>
+            {/* Skill description */}
+            <p className="text-gray-600 text-center max-w-[600px] mx-auto mb-12 leading-relaxed">
+              {SKILL_DEFINITIONS[currentSkill]}
+            </p>
 
-              <div className="flex justify-between items-center">
-                <button onClick={handleBack} className="text-indigo-600 hover:text-indigo-700 font-medium">
-                  Anterior
-                </button>
-                <Button
-                  onClick={handleNext}
-                  className="px-8 bg-indigo-600 hover:bg-indigo-700 rounded-lg"
-                  disabled={!selectedLevel}
+            {/* Skill levels grid */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+              {SKILL_LEVELS.map((level) => (
+                <div
+                  key={level.id}
+                  className={`bg-white rounded-lg p-6 text-center cursor-pointer transition-all border border-indigo-100
+                    ${selectedLevel === level.id ? 'ring-2 ring-indigo-600' : 'hover:border-indigo-300'}
+                    ${level.bgColor}`}
+                  onClick={() => handleSelectLevel(level.id)}
                 >
-                  {isLastSkill ? "Ver Resultados" : "Siguiente"}
-                </Button>
-              </div>
+                  <div className="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-2xl">
+                    {level.emoji}
+                  </div>
+                  <h3 className="text-indigo-600 font-medium mb-2">{level.title}</h3>
+                  <p className="text-sm text-gray-600">{level.description}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Navigation */}
+            <div className="flex justify-between">
+              <Button
+                onClick={handleBack}
+                variant="outline"
+                className="text-indigo-600"
+              >
+                Anterior
+              </Button>
+              <Button
+                onClick={handleNext}
+                className="bg-indigo-600 text-white"
+                disabled={!selectedLevel}
+              >
+                Siguiente
+              </Button>
             </div>
           </div>
         </div>

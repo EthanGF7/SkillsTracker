@@ -20,5 +20,6 @@ export type Skill =
   | 'Empatía'
   | 'Creatividad'
   | 'Gestión del tiempo'
+  | (string & {}) // Permite habilidades personalizadas manteniendo el tipo
 
 export type Level = 'Explorador' | 'Practicante' | 'Experto'

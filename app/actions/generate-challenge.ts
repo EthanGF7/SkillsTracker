@@ -14,12 +14,28 @@ export async function generateMicroChallenge({ skill, level, type }: GenerateMic
     try {
       console.log('Generando microreto:', { skill, level, type })
       
-      const response = await fetch('http://localhost:3000/api/generate-challenge', {
+      // Determinar si es una habilidad personalizada (las que no están en la lista base)
+      const baseSkills = ['Liderazgo', 'Comunicación', 'Organización', 'Resolución de problemas', 
+                         'Trabajo en equipo', 'Adaptabilidad', 'Empatía', 'Creatividad', 'Gestión del tiempo']
+      
+      const isCustomSkill = !baseSkills.includes(skill)
+      const endpoint = isCustomSkill ? 
+        'http://localhost:3000/api/generate-custom-challenge' : 
+        'http://localhost:3000/api/generate-challenge'
+
+      const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ skill, level, type }),
+        body: JSON.stringify(isCustomSkill ? { 
+          skillName: skill, 
+          type 
+        } : { 
+          skill, 
+          level, 
+          type 
+        }),
       })
 
       if (!response.ok) {
@@ -47,10 +63,15 @@ export async function generateMicroChallenge({ skill, level, type }: GenerateMic
       }
 
       // Pequeña pausa antes del siguiente intento
-      await new Promise(resolve => setTimeout(resolve, 1000))
+      await new Promise(resolve => setTimeout(resolve, 2000))
     } catch (error) {
       console.error('Error generando microreto:', error)
-      throw error
+      if (attempts === maxAttempts - 1) {
+        throw error
+      }
+      attempts++
+      // Esperar más tiempo entre reintentos si hay error
+      await new Promise(resolve => setTimeout(resolve, 3000))
     }
   }
 }

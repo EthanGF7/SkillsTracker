@@ -1,0 +1,88 @@
+import { NextResponse } from 'next/server'
+import { DEEPSEEK_API_KEY, DEEPSEEK_API_URL } from '@/app/config/api'
+import { CustomSkillResponse } from '@/app/types/custom-skill'
+import { promises as fs } from 'fs'
+import path from 'path'
+
+async function saveCustomSkill(skillName: string, skillData: CustomSkillResponse) {
+  const filePath = path.join(process.cwd(), 'app/data/custom-skills.json')
+  let data = { 'custom-skills': {} }
+  
+  try {
+    const fileContent = await fs.readFile(filePath, 'utf-8')
+    data = JSON.parse(fileContent)
+  } catch (error) {
+    // Si el archivo no existe o está vacío, usamos el objeto por defecto
+  }
+
+  data['custom-skills'][skillName] = {
+    ...skillData,
+    createdAt: new Date().toISOString()
+  }
+
+  await fs.writeFile(filePath, JSON.stringify(data, null, 2))
+}
+
+export async function POST(request: Request) {
+  try {
+    const { skillName } = await request.json()
+    
+    if (!skillName) {
+      return NextResponse.json(
+        { error: 'Falta el nombre de la habilidad' },
+        { status: 400 }
+      )
+    }
+
+    const systemMessage = {
+      role: 'system',
+      content: `Describe brevemente la habilidad "${skillName}" en formato JSON:
+      {
+        "description": "descripción breve (máximo 2 líneas)",
+        "keyPoints": ["punto 1", "punto 2"],
+        "examples": ["ejemplo 1", "ejemplo 2"]
+      }`
+    }
+
+    const userMessage = {
+      role: 'user',
+      content: `Describe la habilidad: ${skillName}`
+    }
+
+    const response = await fetch(DEEPSEEK_API_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${DEEPSEEK_API_KEY}`
+      },
+      body: JSON.stringify({
+        messages: [systemMessage, userMessage],
+        model: 'deepseek-chat',
+        temperature: 0.7,
+        max_tokens: 200
+      })
+    })
+
+    if (!response.ok) {
+      throw new Error('Error en la API: ' + await response.text())
+    }
+
+    const data = await response.json()
+    const skillDescription: CustomSkillResponse = JSON.parse(data.choices[0].message.content)
+
+    if (!skillDescription.description || !skillDescription.keyPoints || !skillDescription.examples) {
+      throw new Error('Respuesta inválida de la API')
+    }
+
+    // Guardar la habilidad personalizada
+    await saveCustomSkill(skillName, skillDescription)
+
+    return NextResponse.json(skillDescription)
+  } catch (error) {
+    console.error('Error:', error)
+    return NextResponse.json(
+      { error: error instanceof Error ? error.message : 'Error interno del servidor' },
+      { status: 500 }
+    )
+  }
+}
