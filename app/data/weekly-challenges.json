@@ -1,5 +1,35 @@
 [
   {
+    "id": "c1a66764-33ed-4f1b-945c-d83db08f35ac",
+    "title": "Diario de Emociones Ajenas",
+    "description": "Durante una semana, dedica tiempo cada día a observar y documentar las emociones de las personas que te rodean. Este ejercicio te ayudará a desarrollar tu capacidad para reconocer y comprender los sentimientos de los demás, mejorando tu empatía.",
+    "rules": [
+      "Elige un momento del día para observar a las personas en tu entorno (familia, amigos, compañeros de trabajo).",
+      "Anota en un diario las emociones que percibes en al menos tres personas diferentes cada día.",
+      "Reflexiona sobre cómo podrías haber respondido de manera más empática en cada situación."
+    ],
+    "extraTip": "Intenta no hacer suposiciones rápidas sobre las emociones de los demás. Pregúntate qué podría estar causando esas emociones y cómo te sentirías tú en su lugar.",
+    "skill": "Empatía",
+    "level": "Aprendiz",
+    "type": "weekly",
+    "createdAt": "2025-03-17T10:45:20.175Z"
+  },
+  {
+    "id": "110ce867-9d3f-437c-a42d-f17ac4a65fe9",
+    "title": "Diario de Emociones Ajenas",
+    "description": "Durante una semana, dedica tiempo cada día a observar y registrar las emociones de las personas que te rodean. Este ejercicio te ayudará a desarrollar tu capacidad para reconocer y comprender los sentimientos de los demás, mejorando tu empatía.",
+    "rules": [
+      "Elige un momento del día para observar a las personas en tu entorno (familia, amigos, compañeros de trabajo).",
+      "Anota en un diario las emociones que percibes en al menos tres personas diferentes cada día.",
+      "Reflexiona sobre cómo podrías haber respondido de manera más empática en cada situación."
+    ],
+    "extraTip": "Intenta no hacer suposiciones; pregunta amablemente si no estás seguro de lo que alguien está sintiendo.",
+    "skill": "Empatía",
+    "level": "Aprendiz",
+    "type": "weekly",
+    "createdAt": "2025-03-17T10:45:18.868Z"
+  },
+  {
     "id": "a071a215-01c3-4372-a2cb-07ef229af623",
     "title": "Lidera una reunión efectiva",
     "description": "Organiza y lidera una reunión con tu equipo o grupo de trabajo, enfocándote en establecer objetivos claros, fomentar la participación de todos y mantener el enfoque en los temas importantes. Este reto te ayudará a desarrollar habilidades de comunicación, organización y motivación de equipos.",

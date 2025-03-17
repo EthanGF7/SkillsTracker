@@ -1,4 +1,5 @@
 import { validateNewChallenge } from '../utils/challenge-validation'
+import { API_URLS } from '../config/api'
 
 interface GenerateMicroChallengeParams {
   skill: string
@@ -20,8 +21,8 @@ export async function generateMicroChallenge({ skill, level, type }: GenerateMic
       
       const isCustomSkill = !baseSkills.includes(skill)
       const endpoint = isCustomSkill ? 
-        'http://localhost:3000/api/generate-custom-challenge' : 
-        'http://localhost:3000/api/generate-challenge'
+        API_URLS.generateCustomChallenge : 
+        API_URLS.generateChallenge
 
       const response = await fetch(endpoint, {
         method: 'POST',

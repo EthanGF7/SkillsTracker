@@ -1,5 +1,35 @@
 [
   {
+    "id": "14cf5eab-3395-4a40-9c70-7822446ff7fc",
+    "title": "Escucha activa en conversaciones",
+    "description": "Hoy, enfócate en practicar la escucha activa en al menos tres conversaciones. Presta atención no solo a las palabras, sino también al tono de voz y lenguaje corporal de la otra persona. Esto te ayudará a comprender mejor sus emociones y perspectivas.",
+    "rules": [
+      "Mantén contacto visual durante la conversación",
+      "Evita interrumpir mientras la otra persona habla",
+      "Haz preguntas abiertas para profundizar en el tema"
+    ],
+    "extraTip": "Antes de responder, toma un momento para reflexionar sobre lo que la otra persona ha dicho y cómo se siente. Esto te ayudará a responder de manera más empática.",
+    "skill": "Empatía",
+    "level": "Aprendiz",
+    "type": "daily",
+    "createdAt": "2025-03-17T10:44:58.487Z"
+  },
+  {
+    "id": "5c6fb07a-be54-4643-b288-d146067474a1",
+    "title": "Escucha con atención plena",
+    "description": "Hoy, dedica al menos 5 minutos de conversación con una persona para practicar la escucha activa. Presta atención no solo a sus palabras, sino también a su tono de voz, expresiones faciales y lenguaje corporal. Esto te ayudará a comprender mejor sus emociones y perspectivas.",
+    "rules": [
+      "Elige una conversación donde puedas dedicar toda tu atención",
+      "No interrumpas mientras la otra persona habla",
+      "Haz preguntas abiertas para profundizar en su punto de vista"
+    ],
+    "extraTip": "Antes de responder, resume lo que has entendido para asegurarte de que has captado correctamente el mensaje y las emociones de la otra persona.",
+    "skill": "Empatía",
+    "level": "Aprendiz",
+    "type": "daily",
+    "createdAt": "2025-03-17T10:44:50.480Z"
+  },
+  {
     "id": "305fcde8-bfbf-40f5-bf8e-4315457a2643",
     "title": "Inicia una reunión con propósito",
     "description": "Hoy, toma la iniciativa de organizar y liderar una breve reunión de equipo (5-10 minutos). Define un objetivo claro para la reunión, como resolver un problema específico o alinear a todos en una tarea importante. Practica mantener el enfoque y asegúrate de que todos participen.",
