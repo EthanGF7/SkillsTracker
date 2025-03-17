@@ -1,13 +1,13 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
-import { Progress } from "@/components/ui/progress"
+import { Button } from "../../components/ui/button"
+import { Progress } from "../../components/ui/progress"
 import Image from "next/image"
 import Link from "next/link"
 import Header from "./header"
 import { useState, useEffect } from "react"
 import SkillProgress from "./skill-progress"
-import { generateMicroChallenge } from "@/app/actions/generate-challenge"
+import { generateMicroChallenge } from "../../app/actions/generate-challenge"
 
 interface MicroChallenge {
   title: string
